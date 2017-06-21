@@ -12,7 +12,38 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    class Randomizer
+    abstract class RecipeFactory
     {
+        private string name;
+        private int id_number;
+        private Array ingredientlist;
+
+        //Initiating methods for Recipetypes
+        public string getName()
+        {
+            return name;
+        }
+        public void setName(string newName)
+        {
+            name = newName;
+        }
+        public int getID_number()
+        {
+            return id_number;
+        }
+        public void setID_number(int newid_number)
+        {
+            id_number = newid_number;
+        }
+
+        public Array getIngredients()
+        {
+            return ingredientlist;
+        }
+
+        public void setIngredients(Array newIngredientlist)
+        {
+            ingredientlist = newIngredientlist;
+        }
     }
 }

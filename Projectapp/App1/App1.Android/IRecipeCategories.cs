@@ -13,7 +13,7 @@ using Android.Widget;
 namespace App1.Droid
 {
     interface IRecipeCategories
-    {
+    {//Initializing recipe methods, this will probably be changed later on
         void setName();
         string getName();
         
