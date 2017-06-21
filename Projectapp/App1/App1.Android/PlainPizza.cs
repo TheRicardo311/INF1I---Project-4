@@ -17,7 +17,7 @@ namespace App1.Droid
     {
         public string getDescription()
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }
