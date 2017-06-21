@@ -96,6 +96,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Breakfast.cs" />
+    <Compile Include="Desert.cs" />
+    <Compile Include="Snacks.cs" />
+    <Compile Include="MainDish.cs" />
     <Compile Include="PlainPizza.cs" />
     <Compile Include="IPizza.cs" />
     <Compile Include="IRecipeCategories.cs" />
