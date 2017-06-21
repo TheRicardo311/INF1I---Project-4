@@ -4,8 +4,40 @@
              xmlns:local="clr-namespace:App1"
              x:Class="App1.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid x:Name="TopBar" Margin="0" BackgroundColor="Black">
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Title -->
+        <Label Text="ILovePizza" TextColor="White" FontSize="Large" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+        <!-- Dropdown menu-->
+        <Button Text="D" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="Large"  Margin="20,0,0,0"/>
+
+        <!-- Filter button-->
+        <Button Text="F" TextColor="Black" Grid.Row="0" Grid.Column="2" FontSize="Large"  Margin="0,0,20,0"/>
+
+        <!-- Scrollview -->
+        <ScrollView Margin="20,0,20,20" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
+            <StackLayout>
+                <BoxView Color="Blue" HeightRequest="300"/>
+                <BoxView Color="Red" HeightRequest="300"/>
+                <BoxView Color="HotPink"  HeightRequest="300"/>
+                <BoxView Color="Ivory" HeightRequest="300"/>
+                <BoxView Color="GreenYellow" HeightRequest="300"/>
+            </StackLayout>
+        </ScrollView>
+
+    </Grid>
 
 </ContentPage>
