@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    abstract class RecipeFactory
+    public abstract class RecipeFactory
     {
         private string name;
         private int id_number;
