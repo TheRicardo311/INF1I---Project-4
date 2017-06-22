@@ -12,8 +12,9 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    public class snacks : IRecipeCategories
+    public class Snacks : IRecipeCategories
     {
+        string snacksName;
         public void setName()
         {
             Console.WriteLine("Please enter the name of the recipe: ");
