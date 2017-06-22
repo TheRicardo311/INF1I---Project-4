@@ -12,12 +12,14 @@ using Android.Widget;
 
 namespace App1.Droid
 {
+    //The plain pizza class, this is the file the decorator uses to add toppings to
     class PlainPizza : IPizza
     
     {
+        //Uses the getDescription method from the IPizza interfacea
         public string getDescription()
         {
-            return null;
+            return "Thick or thin dough";
         }
     }
 }
