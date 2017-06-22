@@ -12,18 +12,21 @@ using Android.Widget;
 
 namespace App1.Droid
 {
+    //Decorator for the toppings of the pizza categorie
     abstract class Topping : IPizza
     {
+        //New temporary pizza
         public IPizza tempPizza;
+        
         public Topping (IPizza newPizza)
         {
             tempPizza = newPizza;
         }
 
-
+        //Uses the getDescription method from the IPizza interface
         public string getDescription()
         {
-            throw new NotImplementedException();
+            return "Add different toppings";
         }
     }
 }
