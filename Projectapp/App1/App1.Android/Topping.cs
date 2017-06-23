@@ -16,7 +16,7 @@ namespace App1.Droid
     abstract class Topping : IPizza
     {
         //New temporary pizza
-        IPizza tempPizza;
+        public IPizza tempPizza;
         
         public Topping (IPizza newPizza)
         {
