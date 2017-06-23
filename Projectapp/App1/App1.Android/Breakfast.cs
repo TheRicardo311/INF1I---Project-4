@@ -18,12 +18,11 @@ namespace App1.Droid
         public void setName()
         {
             Console.WriteLine("Please enter the name of the recipe: ");
-            Console.ReadLine();
-            return breakfastName;
+            string breakfastName = Convert.ToString(Console.ReadLine());
         }
         public string getName()
         {
-            breakfastName = value;
+            return breakfastName;
         }
     }
 }

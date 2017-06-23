@@ -34,10 +34,10 @@ namespace App1.Droid
 
     public static class RecipeFactory
     {
-        public static Recipe CreateNewRecipe()
-        {
-            return new Recipe("taart", 1, ["appel", "taart"], 72, "Gebak" );
-        }
+        //public static Recipe CreateNewRecipe()
+        //{
+        //    //return new Recipe("taart", 1, ["appel", "taart"], 72, "Gebak" );
+        //}
         
     }
 
