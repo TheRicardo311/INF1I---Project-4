@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    public class Recipe extends RecipeFactory
+    public class RecipeList : RecipeFactory
     {
         setName("Recipe 1");
         setIDNumber(1);
