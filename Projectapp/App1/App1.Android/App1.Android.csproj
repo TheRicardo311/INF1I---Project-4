@@ -97,7 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Breakfast.cs" />
+<<<<<<< HEAD
+    <Compile Include="getRating.cs" />
+    <Compile Include="IRating.cs" />
+=======
     <Compile Include="RecipeList.cs" />
+>>>>>>> 565a6e20415a136ce4dc9b2db774dccd53c6c426
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="Snacks.cs" />
