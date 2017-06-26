@@ -12,68 +12,68 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    class RecipeInfo
+    abstract class Recipe
     {
-    }
 
-    class Banana_split
-    {
-        //Will return a query for the database
-        NullReferenceException
     }
-    class Milkshake
+    class Banana_split : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Irish_coffee
+    class Milkshake : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Biefstuk
+    class Irish_coffee : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Kip_madras
+    class Biefstuk : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Chili_con_carne
+    class Kip_madras : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Zandkoekjes
+    class Chili_con_carne : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Cake
+    class Zandkoekjes : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Worstenbroodjes
+    class Cake : Recipe
     {
         //Will return a query for the database
-        NullReferenceException
+        
     }
-    class Omelet
+    class Worstenbroodjes : Recipe
     {
         //Will return a query for the database
-         NullReferenceException
+        
     }
-    class Brood
+    class Omelet : Recipe
     {
         //Will return a query for the database
-         NullReferenceException
+         
     }
-    class Aardbeiensmoothie
+    class Brood : Recipe
     {
         //Will return a query for the database
-         NullReferenceException
+         
+    }
+    class Aardbeiensmoothie : Recipe
+    {
+        //Will return a query for the database
+         
     }
 }

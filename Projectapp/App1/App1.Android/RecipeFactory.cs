@@ -14,12 +14,13 @@ namespace App1.Droid
 {
     abstract class RecipeFactory
     {
-        public abstract Recipe Create(string name, int id_number, string[,] ingredientlist, int rating, string category);
+        public abstract Recipe Create(int id_number);
+
     }
 
     class ConcreteRecipeFactory : RecipeFactory
     {
-        public override Recipe Create(string name, int id_number, string[,] ingredientlist, int rating, string category)
+        public override Recipe Create(int id_number)
         {
             if ((id_number == 1))
             {
@@ -69,44 +70,11 @@ namespace App1.Droid
             {
                 return new Aardbeiensmoothie();
             }
+            throw new Exception("Error");
         }
     }
-
-
-/*
-
-    public class ConcreteRecipe
-    {
-        public string Name { get; private set; }
-        public int ID_number { get; private set; }
-        public string[,] Ingredientlist { get; private set; }
-        public int Rating { get; private set; }
-        public string Category { get; private set; }
-
-        //Create the class for Recipes
-        public ConcreteRecipe ConcreteRecipe(string name, int id_number, string[,] ingredientlist, int rating, string category)
-        {
-            Name = name;
-            ID_number = id_number;
-            Ingredientlist = ingredientlist;
-            Rating = rating;
-            Category = category;
-        }
-
-    }
-
-<<<<<<< HEAD
-    */
-=======
-    public static class RecipeFactory
-    {
-        //public static Recipe CreateNewRecipe()
-        //{
-        //    //return new Recipe("taart", 1, ["appel", "taart"], 72, "Gebak" );
-        //}
-        
-    }
->>>>>>> 55fa29131f71fce2c7ba0e9cd34a0d0188eb53a5
-
 }
+
+
+
 

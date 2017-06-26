@@ -12,10 +12,5 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    public class RecipeList : RecipeFactory
-    {
-        getName("Recipe 1");
-        int setIDNumber(1);
-        Array setIngredients();
-    }
+  
 }
