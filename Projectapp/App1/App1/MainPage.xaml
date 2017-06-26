@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Dropdown ?-->
-        <Button Text="D" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="Large"  Margin="20,0,0,0"/>
+        <Button Image="dropdown.png" Grid.Row="0" Grid.Column="0" Margin="20,0,0,0"/>
 
         <!-- Filter button-->
         <Button Image="filter.png" Grid.Row="0" Grid.Column="2" Margin="0,0,20,0" Clicked="Filter_Button"/>
