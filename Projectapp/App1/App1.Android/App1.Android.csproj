@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Breakfast.cs" />
+    <Compile Include="CodeAdapter.cs" />
     <Compile Include="RecipeList.cs" />
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
