@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MasterDetail">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="Black">
+            <ContentPage.Content>
+                
+                <StackLayout Margin="5, 35, 5, 5">
+                    
+                    <!-- Menu title -->
+                    <Label Text="Menu" FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+
+                    <!-- Menu buttons -->
+                    <Button Image="home.png" Text="Recipes" TextColor="White" BackgroundColor="Transparent" Clicked="Recipes_Button"/>
+
+                    <Button Image="bookmark.png" Text="Bookmarks" TextColor="White" BackgroundColor="Transparent" Clicked="Bookmarks_Button"/>
+
+                    <Button Image="cake.png" Text="Suggestions" TextColor="White" BackgroundColor="Transparent" Clicked="Suggestions_Button"/>
+
+                </StackLayout>
+                
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout Margin="5, 10, 5, 5">
+                    <Label Text="Detail Page"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+    
+</MasterDetailPage>

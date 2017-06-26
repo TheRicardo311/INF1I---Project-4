@@ -13,7 +13,8 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new App1.MainPage());
+            // Sets the main page when the application starts
+            MainPage = new MasterDetail();
         }
 
         protected override void OnStart()
