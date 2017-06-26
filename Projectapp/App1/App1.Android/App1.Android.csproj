@@ -97,8 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Breakfast.cs" />
-    <Compile Include="getRating.cs" />
-    <Compile Include="IRating.cs" />
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="Snacks.cs" />
