@@ -94,7 +94,18 @@ namespace App1.Droid
 
     }
 
+<<<<<<< HEAD
     */
+=======
+    public static class RecipeFactory
+    {
+        //public static Recipe CreateNewRecipe()
+        //{
+        //    //return new Recipe("taart", 1, ["appel", "taart"], 72, "Gebak" );
+        //}
+        
+    }
+>>>>>>> 55fa29131f71fce2c7ba0e9cd34a0d0188eb53a5
 
 }
 
