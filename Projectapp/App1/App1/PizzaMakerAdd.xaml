@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.SuggestionPage"
-             Title="Suggestions"
+             x:Class="App1.PizzaMakerAdd"
              BackgroundColor="Black">
-    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="I am a suggestion page" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Add item here" TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
-    
 </ContentPage>

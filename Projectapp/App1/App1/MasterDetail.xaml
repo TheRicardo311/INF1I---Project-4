@@ -20,6 +20,9 @@
 
                     <Button Image="cake.png" Text="Suggestions" TextColor="White" BackgroundColor="Transparent" Clicked="Suggestions_Button"/>
 
+                    <Button Image="pizza.png" Text="Pizza Maker" TextColor="White" BackgroundColor="Transparent" Clicked="Pizza_Button"/>
+
+
                 </StackLayout>
                 
             </ContentPage.Content>

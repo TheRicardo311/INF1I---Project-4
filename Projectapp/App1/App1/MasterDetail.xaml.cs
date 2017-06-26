@@ -67,5 +67,14 @@ namespace App1
             // Hides the menu
             IsPresented = false;
         }
+
+        private void Pizza_Button(object sender, EventArgs e)
+        {
+            // Display the suggestions page
+            Detail = new NavigationPage(new PizzaMaker());
+
+            // Hides the menu
+            IsPresented = false;
+        }
     }
 }
