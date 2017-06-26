@@ -14,8 +14,8 @@ namespace App1.Droid
 {
     public class RecipeList : RecipeFactory
     {
-        setName("Recipe 1");
-        setIDNumber(1);
-        setIngredients();
+        getName("Recipe 1");
+        int setIDNumber(1);
+        Array setIngredients();
     }
 }
