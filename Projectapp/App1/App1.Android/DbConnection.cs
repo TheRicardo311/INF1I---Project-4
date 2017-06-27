@@ -15,51 +15,50 @@ namespace App1.Droid
             private string uid;
             private string password;
 
-            //Constructor
-            public void DbConnection()
+        public object MessageBox { get; private set; }
+
+        //Constructor
+        public void DbConnection()
             {
                 Initialize();
             }
 
-            public void CloseConnection()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void dbCommand(string sqlQuery)
-            {
-                throw new NotImplementedException();
-            }
-
-            public void InsertIntoDB()
-            {
-                throw new NotImplementedException();
-            }
-
-            public void OpenConnection()
-            {
-                throw new NotImplementedException();
-            }
-
             //Initialize values
             private void Initialize()
-                {
-                    server = "145.132.52.248";
-                    database = "Project4";
-                    uid = "project4";
-                    password = "hetrapportvanpim";
-                    string connectionString;
-                    connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-                    database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+            {
+                server = "145.132.52.248";
+                database = "Project4";
+                uid = "project4";
+                password = "hetrapportvanpim";
+                string connectionString;
+                connectionString = "SERVER=" + server + ";" + "DATABASE=" +
+                database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-                    connection = new MySqlConnection(connectionString);
-                }
-                /*
-                //open connection to database
-                private bool OpenConnection()
+                connection = new MySqlConnection(connectionString);
+            }
+        
+            
+            //open connection to database
+            private bool OpenConnection()
+            {
+            try
+            {
+                connection.Open();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                //Shows a message box whenever the program can't connect
+                switch (ex.Number)
                 {
+                    case 0:
+                        //HIER MOETEN WE NOG EEN MESSAGE BOX VOOR MAKEN!!!
+                        MessageBox.Show("Cannot connect to server.  Contact administrator");
+                        break;
                 }
-
+                return false;
+            }
+            /*
                 //Close connection
                 private bool CloseConnection()
                 {
@@ -128,11 +127,11 @@ namespace App1.Droid
 
 
                                     CREATE TABLE bike_possession
-                  	                (
+                                    (
                                         neighborhood varchar(69),
                                         total int
                                     );
-        
+
                                     CREATE TABLE criminality
                                     (
                                         neighborhood varchar(69),
@@ -142,8 +141,8 @@ namespace App1.Droid
                                         year_2009 int,
                                         year_2011 int
 
-					                );
-                                
+                                    );
+
                                     CREATE TABLE people
                                     (
                                         neighborhood varchar(69),
@@ -161,31 +160,31 @@ namespace App1.Droid
             {
                 string sqlQuery = @"INSERT INTO car_possession
                                     VALUES ('Stadscentrum', 40),
-		                                    ('Delfshaven', 30),
-		                                    ('Overschie', 58),
-		                                    ('Kralingen_Crooswijk', 42),
-		                                    ('Noord', 38),
-		                                    ('Hillegersberg_Schiebroek', 56),
-		                                    ('Prins_Alexander', 48),
-		                                    ('Feijenoord', 32),
-		                                    ('IJsselmonde', 46),
-		                                    ('Charlois', 43),
-		                                    ('Hoogvliet_Pernis', 42),
-		                                    ('Hoek_van_Holland', 49);
+                                            ('Delfshaven', 30),
+                                            ('Overschie', 58),
+                                            ('Kralingen_Crooswijk', 42),
+                                            ('Noord', 38),
+                                            ('Hillegersberg_Schiebroek', 56),
+                                            ('Prins_Alexander', 48),
+                                            ('Feijenoord', 32),
+                                            ('IJsselmonde', 46),
+                                            ('Charlois', 43),
+                                            ('Hoogvliet_Pernis', 42),
+                                            ('Hoek_van_Holland', 49);
 
                                     INSERT INTO bike_possession
                                     VALUES ('Stadscentrum', 67),
-		                                    ('Delfshaven', 54),
-		                                    ('Overschie', 73),
-		                                    ('Kralingen_Crooswijk', 64),
-		                                    ('Noord', 71),
-		                                    ('Hillegersberg_Schiebroek', 76),
-		                                    ('Prins_Alexander', 75),
-		                                    ('Feijenoord', 53),
-		                                    ('IJsselmonde', 66),
-		                                    ('Charlois', 58),
-		                                    ('Hoogvliet_Pernis', 72),
-		                                    ('Hoek_van_Holland', 81);
+                                            ('Delfshaven', 54),
+                                            ('Overschie', 73),
+                                            ('Kralingen_Crooswijk', 64),
+                                            ('Noord', 71),
+                                            ('Hillegersberg_Schiebroek', 76),
+                                            ('Prins_Alexander', 75),
+                                            ('Feijenoord', 53),
+                                            ('IJsselmonde', 66),
+                                            ('Charlois', 58),
+                                            ('Hoogvliet_Pernis', 72),
+                                            ('Hoek_van_Holland', 81);
 
                                     INSERT INTO criminality
                                     VALUES  ('Charlois', 330, 318, 303, 298, 343),
