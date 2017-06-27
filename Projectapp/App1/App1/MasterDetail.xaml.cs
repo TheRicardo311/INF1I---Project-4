@@ -12,6 +12,7 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetail : MasterDetailPage
     {
+        private bool LoggedIn;
         public MasterDetail()
         {
             InitializeComponent();
@@ -68,6 +69,11 @@ namespace App1
             IsPresented = false;
         }
 
+        /// <summary>
+        /// Click event that takes user to the pizza maker page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Pizza_Button(object sender, EventArgs e)
         {
             // Display the suggestions page
@@ -75,6 +81,60 @@ namespace App1
 
             // Hides the menu
             IsPresented = false;
+        }
+
+        /// <summary>
+        /// Click event that takes user to the log in page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LogIn_Button(object sender, EventArgs e)
+        {
+            var vm = new SignInViewModel();
+            vm.PropertyChanged += SignInViewModel_PropertyChanged;
+
+
+            if (LoggedIn == false)
+            {
+                // Display the suggestions page
+                Detail = new NavigationPage(new SignInPage(vm));
+            }
+            else if (LoggedIn == true)
+            {
+                Detail = new NavigationPage(new ProfilePage());
+            }
+
+            // Hides the menu
+            IsPresented = false;
+        }
+
+        /// <summary>
+        /// Funtion that checks if the user is signed in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void SignInViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            var vm = sender as SignInViewModel;
+            switch (e.PropertyName)
+            {
+                case "SignInRequired":
+                    {
+                        if (vm.SignInRequired)
+                        {
+                            if (!(Detail is SignInPage))
+                            {
+                                Detail = new NavigationPage(new SignInPage(vm));
+                            }
+                        }
+                        else
+                        {
+                            Detail = new NavigationPage(new ProfilePage());
+                            LoggedIn = true;
+                        }
+                        break;
+                    }
+            }
         }
     }
 }
