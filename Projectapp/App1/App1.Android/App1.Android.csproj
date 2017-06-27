@@ -53,6 +53,9 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ObjectModel" />
@@ -98,6 +101,7 @@
   <ItemGroup>
     <Compile Include="Breakfast.cs" />
     <Compile Include="DbConnection.cs" />
+    <Compile Include="IConnection.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
@@ -112,6 +116,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
