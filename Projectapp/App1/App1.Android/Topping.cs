@@ -20,7 +20,7 @@ namespace App1.Droid
         
         public Topping (IPizza newPizza)
         {
-            tempPizza = newPizza;
+            this.tempPizza = newPizza;
         }
 
         //Uses the getDescription method from the IPizza interface
@@ -34,33 +34,52 @@ namespace App1.Droid
 
     public class Mozzarella : Topping
     {
-        public Mozzarella(IPizza newPizza) : base(newPizza)
+        public Mozzarella(IPizza newPizza) : base(newPizza) 
         {
-            Console.WriteLine("Adding Mozzarella");
+            
+            string getDescription()
+            {
+                return getDescription() + "Adding a Mozzarella topping";
+
+            }
         }
     }
+    
     public class Pepperoni : Topping
     {
+
         public Pepperoni(IPizza newPizza) : base(newPizza)
         {
-            Console.WriteLine("Adding Pepperoni");
+            string getDescription()
+            {
+                return getDescription() + "Adding a Pepperoni topping";
+
+            }
         }
     }
+    
     public class Chicken : Topping
     {
         public Chicken(IPizza newPizza) : base(newPizza)
         {
-            Console.WriteLine("Adding Chicken");
+            string getDescription()
+            {
+                return getDescription() + "Adding a Chicken topping";
+
+            }
         }
     }
     public class Shoarma : Topping
     {
         public Shoarma(IPizza newPizza) : base(newPizza)
         {
-            Console.WriteLine("Adding Shoarma");
+            string getDescription()
+            {
+                return getDescription() + "Adding a Shoarma topping";
+
+            }
         }
     }
-
 }
 //Meat Pizza Toppings
 //Sausage, caramelized onions and fennel
