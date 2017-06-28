@@ -8,9 +8,10 @@ namespace App1
 {
     interface IConnection
     {
-        void InsertIntoDB();
+        void DbConnection();
+        void Initialize();
         void OpenConnection();
         void CloseConnection();
-        void dbCommand(string sqlQuery);
+        
     }
 }
