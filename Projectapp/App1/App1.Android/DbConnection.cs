@@ -47,7 +47,7 @@ namespace App1.Droid
         {
             connection.Close();
         }
-
+        /*
         //Insert user statement
         public void InsertUser(user_id, user_name, user_pass)
         {
@@ -188,5 +188,6 @@ namespace App1.Droid
             
             
         }
+        */
     }
 }

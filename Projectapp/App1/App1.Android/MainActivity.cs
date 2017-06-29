@@ -22,8 +22,8 @@ namespace App1.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
 
-            DbConnect connection = new DbConnect();
-            connection.Insert();
+            //DbConnect connection = new DbConnect();
+            //connection.Insert();
         }
       
     }
