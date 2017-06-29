@@ -14,13 +14,15 @@ namespace App1.Droid
 {
     abstract class Recipe
     {
-
+        
     }
     class Banana_split : Recipe
     {
+        private string recipe_id;
         //Will return a query for the database
-        
-    }
+        string Query = @"SELECT * FROM recipe WHERE recept_name = 'banana split')";
+
+            }
     class Milkshake : Recipe
     {
         //Will return a query for the database
@@ -34,7 +36,7 @@ namespace App1.Droid
     class Biefstuk : Recipe
     {
         //Will return a query for the database
-        
+        string Query = @"SELECT * FROM recipe WHERE recept_name = 'biefstuk')";
     }
     class Kip_madras : Recipe
     {
@@ -49,7 +51,7 @@ namespace App1.Droid
     class Zandkoekjes : Recipe
     {
         //Will return a query for the database
-        
+        string Query = @"SELECT * FROM recipe WHERE recept_name = 'zandkoekjes')";
     }
     class Cake : Recipe
     {
@@ -64,7 +66,7 @@ namespace App1.Droid
     class Omelet : Recipe
     {
         //Will return a query for the database
-         
+        string Query = @"SELECT * FROM recipe WHERE recept_name = 'omelet')";
     }
     class Brood : Recipe
     {
