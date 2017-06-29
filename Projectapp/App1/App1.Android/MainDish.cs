@@ -14,16 +14,17 @@ namespace App1.Droid
 {
     public class MainDish : IRecipeCategories
     {
-        string MainDish;
+        string MainDishName;
         public void setName()
         {
             Console.WriteLine("Please enter the name of the recipe: ");
-            Console.ReadLine();
-            return mainDishName;
+            string Main = Convert.ToString(Console.ReadLine());
+            MainDishName = Main;
         }
+
         public string getName()
         {
-            mainDishName = value;
+            return MainDishName;
         }
     }
 }

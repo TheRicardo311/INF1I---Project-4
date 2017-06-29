@@ -12,13 +12,7 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-<<<<<<< HEAD
-=======
-    public class RecipeList : RecipeFactory
+    class Class1
     {
-        setName("Recipe 1");
-        setIDNumber(1);
-        setIngredients();
     }
->>>>>>> de8d55055aa1b2086ac0189951dca7ac2b5c7d44
 }

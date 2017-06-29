@@ -12,38 +12,34 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    public abstract class RecipeFactory
+    public class Recipe
     {
-        private string name;
-        private int id_number;
-        private Array ingredientlist;
+        public string Name { get; private set; }
+        public int ID_number { get; private set; }
+        public string[,] Ingredientlist { get; private set; }
+        public int Rating { get; private set; }
+        public string Category { get; private set; }
 
-        //Initiating methods for Recipetypes
-        public string getName()
+        //Create the class for Recipes
+        public Recipe(string name, int id_number, string[,] ingredientlist, int rating, string category)
         {
-            return name;
-        }
-        public void setName(string newName)
-        {
-            name = newName;
-        }
-        public int getID_number()
-        {
-            return id_number;
-        }
-        public void setID_number(int newid_number)
-        {
-            id_number = newid_number;
+            Name = name;
+            ID_number = id_number;
+            Ingredientlist = ingredientlist;
+            Rating = rating;
+            Category = category;
         }
 
-        public Array getIngredients()
-        {
-            return ingredientlist;
-        }
-
-        public void setIngredients(Array newIngredientlist)
-        {
-            ingredientlist = newIngredientlist;
-        }
     }
+
+    public static class RecipeFactory
+    {
+        //public static Recipe CreateNewRecipe()
+        //{
+        //    //return new Recipe("taart", 1, ["appel", "taart"], 72, "Gebak" );
+        //}
+        
+    }
+
 }
+

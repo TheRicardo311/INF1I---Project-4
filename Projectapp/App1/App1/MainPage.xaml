@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
-             x:Class="App1.MainPage">
+             x:Class="App1.MainPage"
+             Title="Recipes">
 
     <Grid x:Name="TopBar" Margin="0" BackgroundColor="Black">
         <!-- Rows -->
@@ -18,14 +19,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Title -->
-        <Label Text="ILovePizza" TextColor="White" FontSize="Large" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-
-        <!-- Dropdown menu-->
-        <Button Text="D" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="Large"  Margin="20,0,0,0"/>
+        <!-- Dropdown ?-->
+        <Button Image="dropdown.png" Grid.Row="0" Grid.Column="0" Margin="20,0,0,0"/>
 
         <!-- Filter button-->
-        <Button Text="F" TextColor="Black" Grid.Row="0" Grid.Column="2" FontSize="Large"  Margin="0,0,20,0"/>
+        <Button Image="filter.png" Grid.Row="0" Grid.Column="2" Margin="0,0,20,0" Clicked="Filter_Button"/>
 
         <!-- Scrollview -->
         <ScrollView Margin="20,0,20,20" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
