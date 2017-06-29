@@ -16,16 +16,27 @@ namespace App1.Droid
     //These actions are declared in this class
     class DbActions
     {
+        private string user_id;
+        private string user_name;
+        private string recipe_id;
+
+        public void Login()
+        {
+            string Query = @"SELECT* FROM tuser WHERE" + user_id + "=" + user_name + " AND password = SHA('$password')";
+        }
         public void InsertBookmark()
         {
             string Query = @"INSERT INTO bookmark
-                             VALUES (" + user_id > +"," + recipe_id + ")";
+                             VALUES (" + user_id + ", " + recipe_id + ")";
+         
         }
 
         public void RetrieveBookmark()
         {
-            string Query = @"SELECT * FROM bookmark WHERE user_name = " + user_id + ")";
+            string Query = "SELECT * FROM bookmark WHERE user_name = " + user_id + ")";
         }
+
+        public void 
     }
    
 }
