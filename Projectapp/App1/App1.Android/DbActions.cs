@@ -22,7 +22,7 @@ namespace App1.Droid
 
         public void Login()
         {
-            string Query = @"SELECT* FROM tuser WHERE" + user_id + "=" + user_name + " AND password = SHA('$password')";
+            string Query = @"SELECT * FROM user WHERE" + user_id + "=" + user_name + " AND password = SHA('$password')";
         }
         public void InsertBookmark()
         {
@@ -36,7 +36,7 @@ namespace App1.Droid
             string Query = "SELECT * FROM bookmark WHERE user_name = " + user_id + ")";
         }
 
-        public void 
+        
     }
    
 }
