@@ -64,6 +64,23 @@ namespace App1.Droid
 
             //Close connection
             this.CloseConnection();
+            
+        //Insert user statement
+        public void InsertLikes(user_id, recept,id)
+        {
+            string query = "INSERT INTO tableinfo (user_id, 4) VALUES('Bob', 'Henkmeister')";
+
+            //Open connection
+            this.OpenConnection();
+
+            //Create command for the query
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+
+            //Execute command
+            cmd.ExecuteNonQuery();
+
+            //Close connection
+            this.CloseConnection();
 
         }
 
