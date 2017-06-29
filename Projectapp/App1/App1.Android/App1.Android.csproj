@@ -101,9 +101,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Breakfast.cs" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Compile Include="CodeAdapter.cs" />
+    <Compile Include="RecipeList.cs" />
+=======
+>>>>>>> de8d55055aa1b2086ac0189951dca7ac2b5c7d44
+=======
     <Compile Include="DbActions.cs" />
     <Compile Include="DbConnection.cs" />
     <Compile Include="Recipe.cs" />
+>>>>>>> 77d19fb60f8293163a9a84cc8dfb821827043cbc
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="Snacks.cs" />

@@ -48,10 +48,10 @@ namespace App1.Droid
             connection.Close();
         }
 
-        //Insert statement
-        public void Insert(string name, int age)
+        //Insert user statement
+        public void InsertUser(user_id, user_name, user_pass)
         {
-            string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
+            string query = "INSERT INTO tableinfo (user_id, 4) VALUES('Bob', 'Henkmeister')";
 
             //Open connection
             this.OpenConnection();
