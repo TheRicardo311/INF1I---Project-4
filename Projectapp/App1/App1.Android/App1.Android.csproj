@@ -54,7 +54,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\School\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -103,7 +103,6 @@
     <Compile Include="Breakfast.cs" />
     <Compile Include="DbActions.cs" />
     <Compile Include="DbConnection.cs" />
-    <Compile Include="IConnection.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="Topping.cs" />
     <Compile Include="Desert.cs" />
