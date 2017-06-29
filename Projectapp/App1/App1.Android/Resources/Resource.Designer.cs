@@ -1943,19 +1943,19 @@ namespace App1.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int bookmark = 2130837579;
+			public const int add = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int design_fab_background = 2130837580;
+			public const int bookmark = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int design_snackbar_background = 2130837581;
+			public const int cake = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int dropdown = 2130837582;
+			public const int design_fab_background = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int favorite = 2130837583;
+			public const int design_snackbar_background = 2130837583;
 			
 			// aapt resource value: 0x7f020050
 			public const int filter = 2130837584;
@@ -2215,8 +2215,14 @@ namespace App1.Droid
 			// aapt resource value: 0x7f0200a5
 			public const int mr_ic_play_light = 2130837669;
 			
+			// aapt resource value: 0x7f0200a8
+			public const int notification_template_icon_bg = 2130837672;
+			
 			// aapt resource value: 0x7f0200a6
-			public const int notification_template_icon_bg = 2130837670;
+			public const int pizza = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int search = 2130837671;
 			
 			static Drawable()
 			{

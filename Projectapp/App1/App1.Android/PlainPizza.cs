@@ -19,7 +19,7 @@ namespace App1.Droid
         //Uses the getDescription method from the IPizza interfacea
         public string getDescription()
         {
-            return "Thick or thin dough";
+            return "A plain pizza you can add toppings to";
         }
     }
 }

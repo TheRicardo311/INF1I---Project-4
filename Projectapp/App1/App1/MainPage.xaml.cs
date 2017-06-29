@@ -14,8 +14,14 @@ namespace App1
             InitializeComponent();
         }
 
+        /// <summary>
+        /// When filter button clicked, filter page pops up
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Filter_Button(object sender, EventArgs e)
         {
+            // Shows the filter page
             Navigation.PushAsync(new FilterPage());
         }
     }

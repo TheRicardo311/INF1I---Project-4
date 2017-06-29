@@ -12,8 +12,8 @@ using Android.Widget;
 
 namespace App1.Droid
 {
-    interface IPizza
-    {
+    public interface IPizza
+    {   
         string getDescription();
     }
 }

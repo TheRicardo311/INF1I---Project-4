@@ -19,20 +19,21 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Dropdown ?-->
-        <Button Image="dropdown.png" Grid.Row="0" Grid.Column="0" Margin="20,0,0,0"/>
+        <!-- Search button -->
+        <Button Image="search.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"/>
 
         <!-- Filter button-->
-        <Button Image="filter.png" Grid.Row="0" Grid.Column="2" Margin="0,0,20,0" Clicked="Filter_Button"/>
+        <Button Image="filter.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" Clicked="Filter_Button"/>
 
-        <!-- Scrollview -->
+        <!-- ?Scrollview? -->
+        <!-- ? recipes list ? -->
         <ScrollView Margin="20,0,20,20" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
             <StackLayout>
-                <BoxView Color="Blue" HeightRequest="300"/>
-                <BoxView Color="Red" HeightRequest="300"/>
-                <BoxView Color="HotPink"  HeightRequest="300"/>
-                <BoxView Color="Ivory" HeightRequest="300"/>
-                <BoxView Color="GreenYellow" HeightRequest="300"/>
+                <BoxView Color="White" HeightRequest="300"/>
+                <BoxView Color="White" HeightRequest="300"/>
+                <BoxView Color="White"  HeightRequest="300"/>
+                <BoxView Color="White" HeightRequest="300"/>
+                <BoxView Color="White" HeightRequest="300"/>
             </StackLayout>
         </ScrollView>
 
