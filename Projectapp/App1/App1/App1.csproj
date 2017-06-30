@@ -80,6 +80,9 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\School\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Configuration.Install.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
