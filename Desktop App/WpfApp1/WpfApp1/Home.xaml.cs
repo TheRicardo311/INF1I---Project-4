@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Window6.xaml
+    /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class Window6 : Window
+    public partial class Window7 : Window
     {
-        public Window6()
+        public Window7()
         {
             InitializeComponent();
         }
@@ -42,11 +42,6 @@ namespace WpfApp1
             this.Close();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void SnacksButton_Click(object sender, RoutedEventArgs e)
         {
             Window1 snacks = new Window1();
@@ -55,10 +50,10 @@ namespace WpfApp1
         }
 
 
-        private void BreakfastButton_Click(object sender, RoutedEventArgs e)
+        private void DesertButton_Click(object sender, RoutedEventArgs e)
         {
-            Window3 breakfast = new Window3();
-            breakfast.Show();
+            Window4 desert = new Window4();
+            desert.Show();
             this.Close();
         }
 
@@ -69,10 +64,10 @@ namespace WpfApp1
             this.Close();
         }
 
-        private void DesertButton_Click(object sender, RoutedEventArgs e)
+        private void BreakfastButton_Click(object sender, RoutedEventArgs e)
         {
-            Window4 desert = new Window4();
-            desert.Show();
+            Window3 breakfast = new Window3();
+            breakfast.Show();
             this.Close();
         }
 
@@ -82,5 +77,12 @@ namespace WpfApp1
             bookmarks.Show();
             this.Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -26,7 +26,7 @@ namespace WpfApp1
         ///Home button
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow home = new MainWindow();
+            Window7 home = new Window7();
             home.Show();
             this.Close();
         }

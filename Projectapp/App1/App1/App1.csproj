@@ -41,7 +41,6 @@
     <Compile Include="BookmarkPage.xaml.cs">
       <DependentUpon>BookmarkPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DbConnection.cs" />
     <Compile Include="FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
@@ -79,7 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\School\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.Install">
       <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Configuration.Install.dll</HintPath>
