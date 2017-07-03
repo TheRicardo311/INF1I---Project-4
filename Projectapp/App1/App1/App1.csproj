@@ -41,6 +41,7 @@
     <Compile Include="BookmarkPage.xaml.cs">
       <DependentUpon>BookmarkPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DbConnection.cs" />
     <Compile Include="FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
