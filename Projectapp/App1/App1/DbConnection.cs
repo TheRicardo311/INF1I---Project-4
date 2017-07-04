@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Android.Views;
 using MySql.Data.MySqlClient;
 
 
-namespace App1.Droid
+namespace App1
 {
 
     public class DbConnect
     {
+        /*
         private MySqlConnection connection;
         private string server;
         private string database;
@@ -47,7 +47,7 @@ namespace App1.Droid
         {
             connection.Close();
         }
-        /*
+
         //Insert user statement
         public void InsertUser(user_id, user_name, user_pass)
         {
@@ -64,6 +64,7 @@ namespace App1.Droid
 
             //Close connection
             this.CloseConnection();
+        }
             
         //Insert user statement
         public void InsertLikes(user_id, recept,id)
@@ -186,8 +187,8 @@ namespace App1.Droid
 
             return Count;
             
-            
+
         }
-        */
+    */
     }
 }

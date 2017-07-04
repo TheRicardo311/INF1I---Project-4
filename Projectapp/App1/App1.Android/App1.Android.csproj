@@ -103,21 +103,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Breakfast.cs" />
-    <Compile Include="CodeAdapter.cs" />
-    <Compile Include="DbActions.cs" />
-    <Compile Include="DbConnection.cs" />
-    <Compile Include="Recipe.cs" />
-    <Compile Include="RecipeList.cs" />
-    <Compile Include="Suggestions.cs" />
-    <Compile Include="Topping.cs" />
-    <Compile Include="Desert.cs" />
-    <Compile Include="Snacks.cs" />
-    <Compile Include="MainDish.cs" />
-    <Compile Include="PlainPizza.cs" />
-    <Compile Include="IPizza.cs" />
-    <Compile Include="IRecipeCategories.cs" />
-    <Compile Include="RecipeFactory.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

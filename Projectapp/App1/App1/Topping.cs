@@ -2,15 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using App1.Droid;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
-namespace App1.Droid
+namespace App1
 {
     //Decorator for the toppings of the pizza categorie
     public abstract class Topping : IPizza
