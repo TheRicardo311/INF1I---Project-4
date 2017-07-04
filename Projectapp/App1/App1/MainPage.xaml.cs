@@ -21,6 +21,7 @@ namespace App1
         {
             InitializeComponent();
 
+            // Display the recipes
             ListOfRecipes.ItemsSource = _recipes;
         }
 
@@ -36,11 +37,11 @@ namespace App1
         }
 
         /// <summary>
-        /// Just a search button function
+        /// Update list real time while typing
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void MainSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        private void Handle_TextChanged(object sender, TextChangedEventArgs e)
         {
             // Sets the search keywords to string
             string keyword = MainSearchBar.Text;
@@ -50,6 +51,26 @@ namespace App1
 
             // Update list with the search results
             ListOfRecipes.ItemsSource = searchResults;
+        }
+
+        /// <summary>
+        /// Just a search button function
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// When you tap something from the list
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TapDatRecipe(object sender, ItemTappedEventArgs e)
+        {
+            Navigation.PushAsync(new PizzaPage());
         }
     }
 }

@@ -37,8 +37,11 @@
             </StackLayout>
         </ScrollView>-->
         <StackLayout Margin="20">
-            <SearchBar x:Name="MainSearchBar" BackgroundColor="White" SearchButtonPressed="MainSearchBar_SearchButtonPressed" Placeholder="Search"/>
-            <ListView x:Name="ListOfRecipes" BackgroundColor="White"/>
+            <SearchBar x:Name="MainSearchBar" BackgroundColor="White" 
+                       SearchButtonPressed="MainSearchBar_SearchButtonPressed" 
+                       Placeholder="Search"
+                       TextChanged="Handle_TextChanged" />
+            <ListView x:Name="ListOfRecipes" BackgroundColor="White" ItemTapped="TapDatRecipe"/>
         </StackLayout>
 
     </Grid>
