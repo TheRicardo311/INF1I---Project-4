@@ -29,14 +29,14 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Button Cursor="Hand" x:Name="HomeButton" Click="HomeButton_Click" Grid.Column="0" Content="Home" Background="White"/>
-                <Button Cursor="Hand" x:Name="PizzaButton" Margin="10 0 0 0" Grid.Column="1" Content="Pizza Builder" Background="White"/>
-                <Button Cursor="Hand" x:Name="BreakfastButton" Margin="10 0 0 0" Click="BreakfastButton_Click" Grid.Column="2" Content="Breakfast" Background="White"/>
-                <Button Cursor="Hand" x:Name="SnacksButton" Margin="0 0 0 0" Click="SnacksButton_Click" Grid.Column="3" Content="Snacks" Background="White"/>
-                <Button Cursor="Hand" x:Name="MainDishButton" Margin="0 0 0 0" Click="MainDishButton_Click" Grid.Column="4" Content="MainDish" Background="White"/>
-                <Button Cursor="Hand" x:Name="DesertButton" Margin="0 0 0 0" Click="DesertButton_Click" Grid.Column="5" Content="Desert" Background="White"/>
-                <TextBox x:Name="SearchBox" Text="Enter tags" Margin="10 0 0 0" Grid.Column="6"/>
-                <Button Cursor="Hand" x:Name="SearchButton" Click ="SearchButton_Click" Margin="0 0 0 0" Grid.Column="7" Content="Search" Background="White"/>
+                <Button Cursor="Hand" x:Name="DHomeButton" Click="DHomeButton_Click" Grid.Column="0" Content="Home" Background="White"/>
+                <Button Cursor="Hand" x:Name="DPizzaButton" Margin="10 0 0 0" Grid.Column="1" Content="Pizza Builder" Background="White"/>
+                <Button Cursor="Hand" x:Name="DBreakfastButton" Margin="10 0 0 0" Click="DBreakfastButton_Click" Grid.Column="2" Content="Breakfast" Background="White"/>
+                <Button Cursor="Hand" x:Name="DSnacksButton" Margin="0 0 0 0" Click="DSnacksButton_Click" Grid.Column="3" Content="Snacks" Background="White"/>
+                <Button Cursor="Hand" x:Name="DMainDishButton" Margin="0 0 0 0" Click="DMainDishButton_Click" Grid.Column="4" Content="MainDish" Background="White"/>
+                <Button Cursor="Hand" x:Name="DDesertButton" Margin="0 0 0 0" Click="DDesertButton_Click" Grid.Column="5" Content="Desert" Background="White"/>
+                <TextBox x:Name="DSearchBox" Text="Enter tags" Margin="10 0 0 0" Grid.Column="6"/>
+                <Button Cursor="Hand" x:Name="DSearchButton" Click ="DSearchButton_Click" Margin="0 0 0 0" Grid.Column="7" Content="Search" Background="White"/>
 
             </Grid>
 
@@ -44,17 +44,17 @@
                 <TextBlock Margin="0 10 0 10" Foreground="White">Log In</TextBlock>
                 <Grid>
                     <TextBlock Margin="0 10 0 10" Foreground="White">Username</TextBlock>
-                    <TextBox x:Name="NameBox" Text="Username" Margin="70 10 1000 10"/>
+                    <TextBox x:Name="DNameBox" Text="Username" Margin="70 10 1000 10"/>
                 </Grid>
                 <Grid>
                     <TextBlock Margin="0 0 0 10" Foreground="White">Password</TextBlock>
-                    <TextBox x:Name="PasswordBox" Text="Password" Margin="70 0 1000 10"/>
+                    <TextBox x:Name="DPasswordBox" Text="Password" Margin="70 0 1000 10"/>
                 </Grid>
             </StackPanel>
             
             <!-- Images -->
             <Grid>
-                <Button Cursor="Hand" x:Name="BookmarksButton" Click="BookmarksButton_Click" Margin="10 0 1000 0" Content="Bookmarks" Background="White"/>
+                <Button Cursor="Hand" x:Name="DBookmarksButton" Click="DBookmarksButton_Click" Margin="10 0 1000 0" Content="Bookmarks" Background="White"/>
             </Grid>
            
         </StackPanel>

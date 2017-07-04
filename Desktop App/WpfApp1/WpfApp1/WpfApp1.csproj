@@ -50,61 +50,61 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="DApp.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Button_Adapter.cs" />
-    <Compile Include="Snacks.xaml.cs">
-      <DependentUpon>Snacks.xaml</DependentUpon>
+    <Compile Include="DSnacks.xaml.cs">
+      <DependentUpon>DSnacks.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainDish.xaml.cs">
-      <DependentUpon>MainDish.xaml</DependentUpon>
+    <Compile Include="DMainDish.xaml.cs">
+      <DependentUpon>DMainDish.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Breakfast.xaml.cs">
-      <DependentUpon>Breakfast.xaml</DependentUpon>
+    <Compile Include="DBreakfast.xaml.cs">
+      <DependentUpon>DBreakfast.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Deserts.xaml.cs">
-      <DependentUpon>Deserts.xaml</DependentUpon>
+    <Compile Include="DDeserts.xaml.cs">
+      <DependentUpon>DDeserts.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PizzaBuilder.xaml.cs">
-      <DependentUpon>PizzaBuilder.xaml</DependentUpon>
+    <Compile Include="DPizzaBuilder.xaml.cs">
+      <DependentUpon>DPizzaBuilder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bookmarks.xaml.cs">
-      <DependentUpon>Bookmarks.xaml</DependentUpon>
+    <Compile Include="DBookmarks.xaml.cs">
+      <DependentUpon>DBookmarks.xaml</DependentUpon>
     </Compile>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
+    <Compile Include="DApp.xaml.cs">
+      <DependentUpon>DApp.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
+    <Compile Include="DMainWindow.xaml.cs">
+      <DependentUpon>DMainWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="Snacks.xaml">
+    <Page Include="DSnacks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainDish.xaml">
+    <Page Include="DMainDish.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Breakfast.xaml">
+    <Page Include="DBreakfast.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Deserts.xaml">
+    <Page Include="DDeserts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PizzaBuilder.xaml">
+    <Page Include="DPizzaBuilder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Bookmarks.xaml">
+    <Page Include="DBookmarks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Home.xaml">
+    <Page Include="DMainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
