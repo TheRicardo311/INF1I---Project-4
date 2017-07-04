@@ -26,15 +26,14 @@ namespace Test1
         class ToppingDecorator : APizza
         {
             private APizza tempPizza;
-            private string Bottom;
+            //private string Bottom;
             public ToppingDecorator(APizza newPizza)
             {
                 tempPizza = newPizza;
-                Bottom = "CREATING..................";
             }
             public override void getDescription()
             {
-                Console.WriteLine(Bottom);
+               // Console.WriteLine(Bottom);
                 tempPizza.getDescription();
             }
         }
@@ -45,7 +44,7 @@ namespace Test1
             private string Topping;
             public Mozzarella(APizza newPizza) : base(newPizza)
             {
-                Topping = "A Mozzarella pizza ^.^";
+                Topping = "Added Mozzarella";
             }
             public override void getDescription()
             {
@@ -60,7 +59,7 @@ namespace Test1
             private string Topping;
             public Chicken(APizza newPizza) : base(newPizza)
             {
-                Topping = "A Chicken pizza ^.^";
+                Topping = "Added Chicken";
             }
             public override void getDescription()
             {
@@ -127,7 +126,7 @@ namespace Test1
                     break;
 
                 case "2":
-                    APizza myPizza2 = new Chicken(new Pizza());
+                    APizza myPizza2 = new Chicken(new Mozzarella(new Pizza()));
                     myPizza2.getDescription();
                     System.Console.ReadLine();
                     break;

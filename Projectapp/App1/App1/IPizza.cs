@@ -5,8 +5,8 @@ using System.Text;
 
 namespace App1
 {
-    public interface IPizza
+    abstract class APizza
     {   
-        string getDescription();
+        abstract public void getDescription();
     }
 }

@@ -6,71 +6,73 @@ using System.Text;
 namespace App1
 {
     //Decorator for the toppings of the pizza categorie
-    public abstract class Topping : IPizza
+    class Topping : APizza
     {
+
         //New temporary pizza
-        public IPizza tempPizza;
+        private string Bottom;
+        public APizza tempPizza;
         
-        public Topping (IPizza newPizza)
+        public Topping (APizza newPizza)
         {
-            this.tempPizza = newPizza;
+            tempPizza = newPizza;
+            Bottom = "A plain thin bottom with no toppings, Adding toppings now";
         }
 
-        //Uses the getDescription method from the IPizza interface
-        public string getDescription()
+        public override void getDescription()
         {
-            return tempPizza.getDescription();
-            
-        }
-
-    }
-
-    public class Mozzarella : Topping
-    {
-        public Mozzarella(IPizza newPizza) : base(newPizza) 
-        {
-            
-            string getDescription()
-            {
-                return getDescription() + "Adding a Mozzarella topping";
-
-            }
+            tempPizza.getDescription();
         }
     }
-    
-    public class Pepperoni : Topping
+
+    class Mozzarella : Topping
     {
-
-        public Pepperoni(IPizza newPizza) : base(newPizza)
+        private string Topping;
+        public Mozzarella(APizza newPizza) : base(newPizza) 
         {
-            string getDescription()
-            {
-                return getDescription() + "Adding a Pepperoni topping";
-
-            }
+            Topping = "Here you go, a delicious Mozzarella pizza";   
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
-    
-    public class Chicken : Topping
-    {
-        public Chicken(IPizza newPizza) : base(newPizza)
-        {
-            string getDescription()
-            {
-                return getDescription() + "Adding a Chicken topping";
 
-            }
+    class Pepperoni : Topping
+    {
+        private string Topping;
+        public Pepperoni(APizza newPizza) : base(newPizza)
+        {
+            Topping = "Here you go, a delicious Pepperoni pizza";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
-    public class Shoarma : Topping
-    {
-        public Shoarma(IPizza newPizza) : base(newPizza)
-        {
-            string getDescription()
-            {
-                return getDescription() + "Adding a Shoarma topping";
 
-            }
+    class Chicken : Topping
+    {
+        private string Topping;
+        public Chicken(APizza newPizza) : base(newPizza)
+        {
+            Topping = "Here you go, a delicious Chicken pizza";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
+        }
+    }
+    class Shoarma : Topping
+    {
+        private string Topping;
+        public Shoarma(APizza newPizza) : base(newPizza)
+        {
+            Topping = "Here you go, a delicious Shoarma pizza";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
 }
