@@ -4,8 +4,12 @@
              x:Class="App1.PizzaMakerAdd"
              BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="Add item here" TextColor="White"/>
+        <StackLayout Margin="20">
+            <SearchBar x:Name="MainSearchBar" BackgroundColor="White" 
+                       SearchButtonPressed="MainSearchBar_SearchButtonPressed" 
+                       Placeholder="Search"
+                       TextChanged="Handle_TextChanged" />
+            <ListView x:Name="ListOfToppings" BackgroundColor="White" ItemTapped="TapDatTopping"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
