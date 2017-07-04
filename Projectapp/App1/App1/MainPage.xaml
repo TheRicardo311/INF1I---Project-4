@@ -6,27 +6,27 @@
              Title="Recipes">
 
     <Grid x:Name="TopBar" Margin="0" BackgroundColor="Black">
-        <!-- Rows -->
+        <!-- Rows --><!--
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
 
-        <!-- Columns -->
+        --><!-- Columns --><!--
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Search button -->
-        <Button Image="search.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"/>
+        --><!-- Search button --><!--
+        <Button Image="search.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"/>-->
 
-        <!-- Filter button-->
-        <Button Image="filter.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" Clicked="Filter_Button"/>
+        <!-- Filter button--><!--
+        <Button Image="filter.png" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" Clicked="Filter_Button"/>-->
 
         <!-- ?Scrollview? -->
-        <!-- ? recipes list ? -->
+        <!-- ? recipes list ? --><!--
         <ScrollView Margin="20,0,20,20" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3">
             <StackLayout>
                 <BoxView Color="White" HeightRequest="300"/>
@@ -35,7 +35,11 @@
                 <BoxView Color="White" HeightRequest="300"/>
                 <BoxView Color="White" HeightRequest="300"/>
             </StackLayout>
-        </ScrollView>
+        </ScrollView>-->
+        <StackLayout Margin="20">
+            <SearchBar x:Name="MainSearchBar" BackgroundColor="White" SearchButtonPressed="MainSearchBar_SearchButtonPressed" Placeholder="Search"/>
+            <ListView x:Name="ListOfRecipes" BackgroundColor="White"/>
+        </StackLayout>
 
     </Grid>
 
