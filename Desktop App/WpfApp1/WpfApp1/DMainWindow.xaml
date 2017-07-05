@@ -10,7 +10,7 @@
     <Border Padding="10">
         <StackPanel>
             <StackPanel>
-                <TextBlock Margin="0 10 0 10" Foreground="White">Breakfast</TextBlock>
+                <TextBlock Margin="0 10 0 10" Foreground="White">Home</TextBlock>
             </StackPanel>
             <!-- Buttons and search bar -->
             <Grid>
@@ -29,7 +29,7 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Button Cursor="Hand" x:Name="DHomeButton" Click="DHomeButton_Click" Grid.Column="0" Content="Home" Background="White"/>
+                <Button Cursor="Hand" x:Name="DAdapterHomeButton" Click="DAdapterHomeButton_Click" Grid.Column="0" Content="Home" Background="White"/>
                 <Button Cursor="Hand" x:Name="DPizzaButton" Margin="10 0 0 0" Grid.Column="1" Content="Pizza Builder" Background="White"/>
                 <Button Cursor="Hand" x:Name="DBreakfastButton" Margin="10 0 0 0" Click="DBreakfastButton_Click" Grid.Column="2" Content="Breakfast" Background="White"/>
                 <Button Cursor="Hand" x:Name="DSnacksButton" Margin="0 0 0 0" Click="DSnacksButton_Click" Grid.Column="3" Content="Snacks" Background="White"/>

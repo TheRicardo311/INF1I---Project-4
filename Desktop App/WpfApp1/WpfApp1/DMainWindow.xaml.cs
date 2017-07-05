@@ -23,7 +23,7 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        private void DHomeButton_Click(object sender, RoutedEventArgs e)
+        public void DAdapterHomeButton_Click(object sender, RoutedEventArgs e)
         {
             Window7 DMainWindow = new Window7();
             DMainWindow.Show();
