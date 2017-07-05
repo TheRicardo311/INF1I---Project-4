@@ -11,6 +11,7 @@ namespace App1
         string ReturnCategory();
         string ReturnIngredients();
         string ReturnDescription();
+        string ReturnImage();
     }
     class French_toast : Recipe
     {
@@ -19,6 +20,7 @@ namespace App1
         string recipe_category;
         string recipe_ingredients;
         string recipe_description;
+        string recipe_image;
 
         //Create and return recipe_name
         public string ReturnName()
@@ -47,6 +49,13 @@ namespace App1
             string recipe_description = "In a small bowl, combine, cinnamon, nutmeg, and sugar and set aside briefly." + "\n" + "   In a 10-inch or 12-inch skillet, melt butter over medium heat." + "\n" + "Whisk together cinnamon mixture, eggs, milk, and vanilla and pour into a shallow container such as a pie plate." + "\n" + "Dip bread in egg mixture." + "\n" + "Fry slices until golden brown, then flip to cook the other side." + "\n" + "Serve with syrup.";
 
             return recipe_description;
+        }
+
+        public string ReturnImage()
+        {
+            string recipe_image = "French Toast.jpg";
+
+            return recipe_image;
         }
         
     }
@@ -84,6 +93,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Pancakes.jpg";
+
+            return recipe_image;
+        }
     }
     class Scrambled_eggs : Recipe
     {
@@ -118,6 +133,13 @@ namespace App1
             string recipe_description = "Eggs are delicate and will continue to cook even after you’ve taken them off the heat, so it’s really important to remove them just before they’re ready, so that they’ll be just right by the time you come to eat them." + "\n" + "Crack the eggs into a measuring jug." + "\n" + "Add a tiny pinch of salt and pepper, then use a fork to beat them together well." + "\n" + "Put a medium saucepan over a low heat and add the butter." + "\n" + "Leave it to melt slowly, then when it starts to bubble carefully pour in the eggs." + "\n" + "Stir slowly with a wooden spoon, or a spatula if you’ve got one, so you can get right to the edges of the pan." + "\n" + "Keep gently stirring until the eggs still look silky, slightly runny and slightly underdone, and then remove from the heat – the heat of the pan will continue to cook the eggs to perfection." + "\n" + "Serve with lightly buttered toast.";
 
             return recipe_description;
+        }
+
+        public string ReturnImage()
+        {
+            string recipe_image = "Scrambled eggs.jpg";
+
+            return recipe_image;
         }
     }
     class Croissants : Recipe
@@ -154,6 +176,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Croissants.jpg";
+
+            return recipe_image;
+        }
     }
     class Chocolate_pudding : Recipe
     {
@@ -171,7 +199,7 @@ namespace App1
 
         public string ReturnCategory()
         {
-            string recipe_category = "Desert";
+            string recipe_category = "Dessert";
 
             return recipe_category;
         }
@@ -188,6 +216,12 @@ namespace App1
             string recipe_description = "Stir together sugar, cocoa, cornstarch and salt in medium saucepan; gradually stir in milk." + "\n" + "Cook over medium heat, stirring constantly, until mixture boils; boil and stir 1 minute." + "\n" + "Remove from heat; stir in butter and vanilla. Pour into individual dessert dishes." + "\n" + "To avoid a skin from forming on top, press plastic wrap directly onto surface; serve warm or refrigerate at least 2 hours." + "\n" + "Garnish with whipped topping, if desired. 4 servings.";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Chocolate pudding.jpg";
+
+            return recipe_image;
         }
     }
     class Strawberry_pudding : Recipe
@@ -224,6 +258,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Strawberry pudding.jpg";
+
+            return recipe_image;
+        }
     }
     class Vanilla_pudding : Recipe
     {
@@ -258,6 +298,12 @@ namespace App1
             string recipe_description = "Henk7";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Vanilla pudding.jpg";
+
+            return recipe_image;
         }
     }
     class Tiramisu : Recipe
@@ -294,6 +340,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Tiramisu.jpg";
+
+            return recipe_image;
+        }
     }
     class Brownies : Recipe
     {
@@ -328,6 +380,12 @@ namespace App1
             string recipe_description = "Henk9";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Brownies.jpg";
+
+            return recipe_image;
         }
     }
     class Popcorn : Recipe
@@ -364,6 +422,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Popcorn.jpg";
+
+            return recipe_image;
+        }
     }
     class Fudge : Recipe
     {
@@ -398,6 +462,12 @@ namespace App1
             string recipe_description = "Henk11";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Fudge.jpg";
+
+            return recipe_image;
         }
     }
     class Nachos : Recipe
@@ -434,6 +504,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Nachos.jpg";
+
+            return recipe_image;
+        }
     }
     class Shepherds_pie : Recipe
     {
@@ -468,6 +544,12 @@ namespace App1
             string recipe_description = "Henk13";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Shepherds pie.jpg";
+
+            return recipe_image;
         }
     }
     class Hamburger : Recipe
@@ -504,6 +586,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Hamburger.jpg";
+
+            return recipe_image;
+        }
     }
     class Chicken_soup : Recipe
     {
@@ -539,6 +627,12 @@ namespace App1
 
             return recipe_description;
         }
+        public string ReturnImage()
+        {
+            string recipe_image = "Chicken soup.jpg";
+
+            return recipe_image;
+        }
     }
     class Pasta_bolognese : Recipe
     {
@@ -573,6 +667,12 @@ namespace App1
             string recipe_description = "Henk16";
 
             return recipe_description;
+        }
+        public string ReturnImage()
+        {
+            string recipe_image = "Pasta bolognese.jpg";
+
+            return recipe_image;
         }
     }
 }

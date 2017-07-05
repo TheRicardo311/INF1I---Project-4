@@ -79,7 +79,7 @@ namespace App1
             string recipeIngredients = createNewrecipe.Create(selectedRecipe).ReturnIngredients();
 
             // Shows recipe details page
-            Navigation.PushAsync(new RecipeDetailsPage(selectedRecipe));
+            Navigation.PushAsync(new RecipeDetailsPage(recipeName, recipeCategory, recipeIngredients, recipeDescription));
         }
     }
 }
