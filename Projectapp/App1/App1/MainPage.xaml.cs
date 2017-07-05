@@ -71,6 +71,9 @@ namespace App1
             // Set selected item to string
             string selectedRecipe = e.SelectedItem.ToString();
 
+            ConcreteRecipeFactory createNewrecipe = new ConcreteRecipeFactory();
+            createNewrecipe.Create(selectedRecipe);
+
             // Shows recipe details page
             Navigation.PushAsync(new RecipeDetailsPage(selectedRecipe));
         }
