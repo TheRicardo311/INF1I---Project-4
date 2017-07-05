@@ -66,6 +66,9 @@ namespace App1
             // Set selected item to string
             string selectedTopping = e.SelectedItem.ToString();
 
+            APizza createNewTopping = new PlainPizza();
+            createNewTopping.getDescription();
+
             // Shows recipe details page
             //Navigation.PushAsync(new INSERTPAGEHERE(selectedTopping))
         }
