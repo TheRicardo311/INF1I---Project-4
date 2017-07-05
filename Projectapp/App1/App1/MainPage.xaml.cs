@@ -73,6 +73,10 @@ namespace App1
 
             ConcreteRecipeFactory createNewrecipe = new ConcreteRecipeFactory();
             createNewrecipe.Create(selectedRecipe);
+            string recipeDescription = createNewrecipe.Create(selectedRecipe).ReturnDescription();
+            string recipeName = createNewrecipe.Create(selectedRecipe).ReturnName();
+            string recipeCategory = createNewrecipe.Create(selectedRecipe).ReturnCategory();
+            string recipeIngredients = createNewrecipe.Create(selectedRecipe).ReturnIngredients();
 
             // Shows recipe details page
             Navigation.PushAsync(new RecipeDetailsPage(selectedRecipe));
