@@ -11,6 +11,7 @@ namespace App1
         string ReturnCategory();
         string ReturnIngredients();
         string ReturnDescription();
+        string ReturnImage();
     }
     class French_toast : Recipe
     {
