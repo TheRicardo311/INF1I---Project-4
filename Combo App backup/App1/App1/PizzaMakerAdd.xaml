@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.PizzaMakerAdd"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <SearchBar x:Name="MainSearchBar" BackgroundColor="White" 
+                       SearchButtonPressed="MainSearchBar_SearchButtonPressed" 
+                       Placeholder="Search"
+                       TextChanged="Handle_TextChanged" />
+            <ListView x:Name="ListOfToppings" BackgroundColor="White" ItemTapped="TapDatTopping"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
