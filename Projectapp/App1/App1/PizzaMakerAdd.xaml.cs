@@ -59,21 +59,17 @@ namespace App1
         private void TapDatTopping(object sender, ItemTappedEventArgs e)
         {
             Navigation.PushAsync(new PizzaMaker());
-            
-
         }
 
-        void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        private void Toppingselected(object sender, SelectedItemChangedEventArgs e)
         {
-            if (e.SelectedItem == null)
-            {
-                return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
-            }
-            DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
-            //((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
+            // Set selected item to string
+            string selectedTopping = e.SelectedItem.ToString();
+
+            // Shows recipe details page
+            //Navigation.PushAsync(new INSERTPAGEHERE(selectedTopping))
         }
 
     };
-
 
 }
