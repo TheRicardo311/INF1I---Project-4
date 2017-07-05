@@ -12,9 +12,7 @@ namespace App1
         // List of Recipes
         private readonly List<string> _recipes = new List<string>
         {
-            "Pizza", "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna" , "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna"
-            , "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna", "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna"
-            , "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna"
+            "Pizza", "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna" , "Banaan", "Analyse2", "Ei", "Deur", "Stoel"
         };
 
         public MainPage()
@@ -64,13 +62,17 @@ namespace App1
         }
 
         /// <summary>
-        /// When you tap something from the list
+        /// Select item from list
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void TapDatRecipe(object sender, ItemTappedEventArgs e)
+        private void RecipeSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Navigation.PushAsync(new PizzaPage());
+            // Set selected item to string
+            string selectedRecipe = e.SelectedItem.ToString();
+
+            // Shows recipe details page
+            //Navigation.PushAsync(new INSERTPAGEHERE(selectedRecipe))
         }
     }
 }

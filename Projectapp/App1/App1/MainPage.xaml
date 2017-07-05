@@ -41,7 +41,7 @@
                        SearchButtonPressed="MainSearchBar_SearchButtonPressed" 
                        Placeholder="Search"
                        TextChanged="Handle_TextChanged" />
-            <ListView x:Name="ListOfRecipes" BackgroundColor="White" ItemTapped="TapDatRecipe"/>
+            <ListView x:Name="ListOfRecipes" BackgroundColor="White" ItemSelected="RecipeSelected"/>
         </StackLayout>
 
     </Grid>
