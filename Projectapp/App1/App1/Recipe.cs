@@ -389,30 +389,30 @@ namespace App1
             return recipe_description;
         }
     }
-    class Shephards_pie : Recipe
+    class Shepherds_pie : Recipe
     {
-        public string ReturnNameShephards_pie()
+        public string ReturnNameShepherds_pie()
         {
-            string recipe_name = "Shephards pie";
+            string recipe_name = "Shepherds pie";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryShephards_pie()
+        public string ReturnCategoryShepherds_pie()
         {
             string recipe_category = "Main dish";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsShephards_pie()
+        public string ReturnIngredientsShepherds_pie()
         {
             string recipe_ingredients = "Bob13";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionShephards_pie()
+        public string ReturnDescriptionShepherds_pie()
         {
             string recipe_description = "Henk13";
 

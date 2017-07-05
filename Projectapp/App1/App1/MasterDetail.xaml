@@ -20,7 +20,7 @@
 
                     <Button Image="cake.png" Text="Suggestions" TextColor="White" BackgroundColor="Transparent" Clicked="Suggestions_Button"/>
 
-                    <Button Image="pizza.png" Text="Pizza Maker" TextColor="White" BackgroundColor="Transparent" Clicked="Pizza_Button"/>
+                    <Button Image="pizzaIcon.png" Text="Pizza Maker" TextColor="White" BackgroundColor="Transparent" Clicked="Pizza_Button"/>
 
                     <Button Image="login.png" Text="Log in" TextColor="White" BackgroundColor="Transparent" Clicked="LogIn_Button"/>
 

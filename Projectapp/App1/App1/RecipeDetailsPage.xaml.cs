@@ -15,24 +15,28 @@ namespace App1
         public RecipeDetailsPage(string selectedRecipe)
         {
             InitializeComponent();
-
+            
+            // Set title of recipe
             this.Title = selectedRecipe;
-            var layout = new StackLayout
-            {
-                Margin = 20
-            };
+            
+
+            // Set stacklayout
+            var layout = new StackLayout { Margin = 20 };
             this.Content = layout;
 
-            
-            //return new ContentPage
-            //{
-            //    Content = new Label
-            //    {
-            //        Text = "Hello, Forms!",
-            //        VerticalOptions = LayoutOptions.CenterAndExpand,
-            //        HorizontalOptions = LayoutOptions.CenterAndExpand,
-            //    };
-            //}
+            // Set image
+            Image _image = new Image { Source = selectedRecipe + ".jpg" };
+
+            // Set description to label
+            Label _label = new Label
+            {
+                Text = "Add description here for " + selectedRecipe
+            };
+
+
+            // Adding things to screen
+            layout.Children.Add(_image);
+            layout.Children.Add(_label);
         }
     }
 }

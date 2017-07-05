@@ -17,7 +17,7 @@ namespace App1
         {
             if ((selectedRepice == "French Toast"))
             {
-                return new French_Toast();
+                return new French_toast();
             }
             if ((selectedRepice == "Pancakes"))
             {
@@ -65,7 +65,7 @@ namespace App1
             }
             if ((selectedRepice == "Sheperds Pie"))
             {
-                return new Sheperds_Pie();
+                return new Shepherds_pie();
             }
             if ((selectedRepice == "Hamburger"))
             {

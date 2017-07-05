@@ -2222,10 +2222,10 @@ namespace App1.Droid
 			public const int notification_template_icon_bg = 2130837674;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int pizza = 2130837671;
+			public const int Pizza = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int PizzaHome = 2130837672;
+			public const int pizzaIcon = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
 			public const int search = 2130837673;

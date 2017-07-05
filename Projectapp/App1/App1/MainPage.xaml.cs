@@ -72,7 +72,7 @@ namespace App1
             string selectedRecipe = e.SelectedItem.ToString();
 
             // Shows recipe details page
-            //Navigation.PushAsync(new INSERTPAGEHERE(selectedRecipe))
+            Navigation.PushAsync(new RecipeDetailsPage(selectedRecipe));
         }
     }
 }
