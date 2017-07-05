@@ -58,16 +58,19 @@ namespace App1
         /// <param name="e"></param>
         private void TapDatTopping(object sender, ItemTappedEventArgs e)
         {
+            
             Navigation.PushAsync(new PizzaMaker());
         }
 
         private void Toppingselected(object sender, SelectedItemChangedEventArgs e)
         {
             // Set selected item to string
+
             string selectedTopping = e.SelectedItem.ToString();
 
-            APizza createNewTopping = new PlainPizza();
-            createNewTopping.getDescription();
+            IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
+            
+
 
             // Shows recipe details page
             //Navigation.PushAsync(new INSERTPAGEHERE(selectedTopping))
