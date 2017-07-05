@@ -19,6 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Window3 : Window
     {
+        //Home Button
         public Window3()
         {
             InitializeComponent();
@@ -30,11 +31,13 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Search Button
         private void DSearchButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Search results for {this.DSearchBox.Text}");
         }
 
+        //Pizza Button
         private void DPizzaButton_Click(object sender, RoutedEventArgs e)
         {
             Window5 Dpizza = new Window5();
@@ -42,6 +45,7 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Snacks Button
         private void DSnacksButton_Click(object sender, RoutedEventArgs e)
         {
             Window1 Dsnacks = new Window1();
@@ -49,7 +53,7 @@ namespace WpfApp1
             this.Close();
         }
 
-
+        //Dessert Button
         private void DDesertButton_Click(object sender, RoutedEventArgs e)
         {
             Window4 Ddesert = new Window4();
@@ -57,6 +61,7 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Main Dish Button
         private void DMainDishButton_Click(object sender, RoutedEventArgs e)
         {
             Window2 DmainDish = new Window2();
@@ -64,6 +69,7 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Breakfast Button
         private void DBreakfastButton_Click(object sender, RoutedEventArgs e)
         {
             Window3 Dbreakfast = new Window3();
@@ -71,6 +77,7 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Login Screen Button
         private void DBookmarksButton_Click(object sender, RoutedEventArgs e)
         {
             Window6 Dbookmarks = new Window6();

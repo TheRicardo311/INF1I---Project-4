@@ -6,12 +6,16 @@ using System.Text;
 namespace App1
 {
     //The plain pizza class, this is the file the decorator uses to add toppings to
-    class PlainPizza : APizza
+    class PlainPizza : IPizza
     {
-        private string adding;
-        public override void getDescription()
+        public string Name()
         {
-            adding = "Baking a nice hot pizza for you";
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
+        }
+
+        public string Recommandation()
+        {
+            return null;
         }
     }
 }
