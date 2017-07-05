@@ -12,7 +12,7 @@ namespace App1
         // List of Recipes
         private readonly List<string> _recipes = new List<string>
         {
-            "Pizza", "Appeltaart", "Peter", "Chicken Nuggets", "Lasagna" , "Banaan", "Analyse2", "Ei", "Deur", "Stoel"
+            "French Toast", "Pancakes", "Scrambled eggs", "Croissants", "Chocolate pudding" , "Strawberry pudding", "Vanilla pudding", "Tiramisu", "Brownies", "Popcorn", "Fudge", "Nachos", "Sheperds Pie", "Hamburger", "Chicken soup", "Pasta bolognese"
         };
 
         public MainPage()
