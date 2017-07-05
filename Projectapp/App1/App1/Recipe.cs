@@ -5,41 +5,46 @@ using System.Text;
 
 namespace App1
 {
-    abstract class Recipe
+    interface Recipe
+    {
+        string ReturnName();
+        string ReturnCategory();
+        string ReturnIngredients();
+        string ReturnDescription();
+    }
+    class French_toast : Recipe
     {
         //Type declaration
         string recipe_name;
         string recipe_category;
         string recipe_ingredients;
         string recipe_description;
-    }
-    class French_toast : Recipe
-    {
+
         //Create and return recipe_name
-        public string ReturnNameFrench_toast()
+        public string ReturnName()
         {
             string recipe_name = "French toast";
 
             return recipe_name;
         }
         
-        public string ReturnCategoryFrench_toast()
+        public string ReturnCategory()
         {
             string recipe_category = "Breakfast";
 
             return recipe_category;
         }
         
-        public string ReturnIngredientsFrench_toast()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob1";
+            string recipe_ingredients = "- 1/4 teaspoon ground nutmeg" + "\n" + "- 1 teaspoon ground cinnamon" + "\n" + "- 2 tablespoons sugar" + "\n" + "- 4 tablespoons butter" + "\n" + "- 4 eggs" + "\n" + "- 1/4 cup milk" + "\n" + "- 1/2 teaspoon vanilla extract" + "- 8 slices challah, brioche, or white bread" + "- 1/2 cup maple syrup, warmed";
 
             return recipe_ingredients;
         }
         
-        public string ReturnDescriptionFrench_toast()
+        public string ReturnDescription()
         {
-            string recipe_description = "Henk1";
+            string recipe_description = "In a small bowl, combine, cinnamon, nutmeg, and sugar and set aside briefly." + "\n" + "   In a 10-inch or 12-inch skillet, melt butter over medium heat." + "\n" + "Whisk together cinnamon mixture, eggs, milk, and vanilla and pour into a shallow container such as a pie plate." + "\n" + "Dip bread in egg mixture." + "\n" + "Fry slices until golden brown, then flip to cook the other side." + "\n" + "Serve with syrup.";
 
             return recipe_description;
         }
@@ -47,88 +52,103 @@ namespace App1
     }
     class Pancakes : Recipe
     {
-        public string ReturnNamePancakes()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Pancakes";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryPancakes()
+        public string ReturnCategory()
         {
             string recipe_category = "Breakfast";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsPancakes()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob2";
+            string recipe_ingredients = "- 1/2 cups all-purpose flour" + "\n" + "- 3 1/2 teaspoons baking powder" + "\n" + "- 1 teaspoon salt" + "\n" + "- 1 tablespoon white sugar" + "\n" + "- 1/4 cups milk" + "\n" + "- 1 egg" + "\n" + "- 3 tablespoons butter, melted";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionPancakes()
+        public string ReturnDescription()
         {
-            string recipe_description = "Henk2";
+            string recipe_description = "In a large bowl, sift together the flour, baking powder, salt and sugar." + "\n" + "Make a well in the center and pour in the milk, egg and melted butter; mix until smooth." + "\n" + "Heat a lightly oiled griddle or frying pan over medium high heat." + "\n" + "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake." + "\n" + "Brown on both sides and serve hot.";
 
             return recipe_description;
         }
     }
     class Scrambled_eggs : Recipe
     {
-        public string ReturnNameScrambled_eggs()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Scrambled eggs";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryScrambled_eggs()
+        public string ReturnCategory()
         {
             string recipe_category = "Breakfast";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsScrambled_eggs()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob3";
+            string recipe_ingredients = "- 8 large free-range eggs" + "\n" + "- sea salt" + "\n" + "- freshly ground black pepper" + "\n" + "- a small knob of unsalted butter";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionScrambled_eggs()
+        public string ReturnDescription()
         {
-            string recipe_description = "Henk3";
+            string recipe_description = "Eggs are delicate and will continue to cook even after you’ve taken them off the heat, so it’s really important to remove them just before they’re ready, so that they’ll be just right by the time you come to eat them." + "\n" + "Crack the eggs into a measuring jug." + "\n" + "Add a tiny pinch of salt and pepper, then use a fork to beat them together well." + "\n" + "Put a medium saucepan over a low heat and add the butter." + "\n" + "Leave it to melt slowly, then when it starts to bubble carefully pour in the eggs." + "\n" + "Stir slowly with a wooden spoon, or a spatula if you’ve got one, so you can get right to the edges of the pan." + "\n" + "Keep gently stirring until the eggs still look silky, slightly runny and slightly underdone, and then remove from the heat – the heat of the pan will continue to cook the eggs to perfection." + "\n" + "Serve with lightly buttered toast.";
 
             return recipe_description;
         }
     }
     class Croissants : Recipe
     {
-        public string ReturnNameCroissants()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Croissants";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryCroissants()
+        public string ReturnCategory()
         {
             string recipe_category = "Breakfast";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsCroissants()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob4";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionCroissants()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk4";
 
@@ -137,62 +157,68 @@ namespace App1
     }
     class Chocolate_pudding : Recipe
     {
-        public string ReturnNameChocolate_pudding()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Chocolate pudding";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryChocolate_pudding()
+        public string ReturnCategory()
         {
             string recipe_category = "Desert";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsChocolate_pudding()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob5";
+            string recipe_ingredients = "- 2/3 cup sugar" + "\n" + "- 1/4 cup Cocoa" + "\n" + "- 3 tablespoons cornstarch" + "\n" + "- 1/4 teaspoon salt" + "\n" + "- 2 1/4 cups milk" + "\n" + "- 2 tablespoons butter or margarine" + "\n" + "- 1 teaspoon vanilla extract" + "\n" + "- Whipped topping (optional)";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionChocolate_pudding()
+        public string ReturnDescription()
         {
-            string recipe_description = "Henk5";
+            string recipe_description = "Stir together sugar, cocoa, cornstarch and salt in medium saucepan; gradually stir in milk." + "\n" + "Cook over medium heat, stirring constantly, until mixture boils; boil and stir 1 minute." + "\n" + "Remove from heat; stir in butter and vanilla. Pour into individual dessert dishes." + "\n" + "To avoid a skin from forming on top, press plastic wrap directly onto surface; serve warm or refrigerate at least 2 hours." + "\n" + "Garnish with whipped topping, if desired. 4 servings.";
 
             return recipe_description;
         }
-        string recipe_name = "Chocolate pudding";
-        string recipe_category = "Desert";
-        string recipe_ingredients = "Bob5";
-        string recipe_description = "Henk5";
     }
     class Strawberry_pudding : Recipe
     {
-        public string ReturnNameStrawberry_pudding()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Strawberry pudding";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryStrawberry_pudding()
+        public string ReturnCategory()
         {
-            string recipe_category = "Desert";
+            string recipe_category = "Dessert";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsStrawberry_pudding()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob6";
+            string recipe_ingredients = "- 2 lbs strawberries" + "\n" + "- 1 cup sugar (to taste)" + "\n" + "- 1 quart water" + "- 1⁄3 cup cornstarch (if you like your pudding very stiff, use 1/2 cup)" + "- 1⁄2 teaspoon vanilla (optional)" + "\n" + "- 1⁄2 teaspoon finely grated lemon zest (optional)";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionStrawberry_pudding()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk6";
 
@@ -201,98 +227,103 @@ namespace App1
     }
     class Vanilla_pudding : Recipe
     {
-        public string ReturnNameVanilla_pudding()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Vanilla pudding";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryVanilla_pudding()
+        public string ReturnCategory()
         {
-            string recipe_category = "Desert";
+            string recipe_category = "Dessert";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsVanilla_pudding()
+        public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob7";
+            string recipe_ingredients = "- 1/3 cup sugar" + "\n" + "- 2 tablespoons cornstarch" + "\n" + "- 1/3 teaspoon salt" + "\n" + "- 2 cups milk" + "\n" + "- 2 large egg yolks, slightly beaten" + "\n" + "- 2 tablespoons butter or margarine, softened" + "\n" + "2 teaspoons vanilla";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionVanilla_pudding()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk7";
 
             return recipe_description;
         }
-
-        string recipe_name = "Vanilla pudding";
-        string recipe_category = "Desert";
-        string recipe_ingredients = "Bob7";
-        string recipe_description = "Henk7";
     }
     class Tiramisu : Recipe
     {
-        public string ReturnNameTiramisu()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Tiramisu";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryTiramisu()
+        public string ReturnCategory()
         {
-            string recipe_category = "Desert";
+            string recipe_category = "Dessert";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsTiramisu()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob8";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionTiramisu()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk8";
 
             return recipe_description;
         }
-
-        string recipe_name = "Tiramisu";
-        string recipe_category = "Desert";
-        string recipe_ingredients = "Bob8";
-        string recipe_description = "Henk8";
     }
     class Brownies : Recipe
     {
-        public string ReturnNameBrownies()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Brownies";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryBrownies()
+        public string ReturnCategory()
         {
             string recipe_category = "Snacks";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsBrownies()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob9";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionBrownies()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk9";
 
@@ -301,28 +332,33 @@ namespace App1
     }
     class Popcorn : Recipe
     {
-        public string ReturnNamePopcorn()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Popcorn";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryPopcorn()
+        public string ReturnCategory()
         {
             string recipe_category = "Snacks";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsPopcorn()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob10";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionPopcorn()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk10";
 
@@ -331,28 +367,33 @@ namespace App1
     }
     class Fudge : Recipe
     {
-        public string ReturnNameFudge()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Fudge";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryFudge()
+        public string ReturnCategory()
         {
             string recipe_category = "Snacks";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsFudge()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob11";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionFudge()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk11";
 
@@ -361,28 +402,33 @@ namespace App1
     }
     class Nachos : Recipe
     {
-        public string ReturnNameNachos()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Nachos";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryNachos()
+        public string ReturnCategory()
         {
             string recipe_category = "Snacks";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsNachos()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob12";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionNachos()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk12";
 
@@ -391,28 +437,33 @@ namespace App1
     }
     class Shepherds_pie : Recipe
     {
-        public string ReturnNameShepherds_pie()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Shepherds pie";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryShepherds_pie()
+        public string ReturnCategory()
         {
             string recipe_category = "Main dish";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsShepherds_pie()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob13";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionShepherds_pie()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk13";
 
@@ -421,28 +472,33 @@ namespace App1
     }
     class Hamburger : Recipe
     {
-        public string ReturnNameHamburger()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Hamburger";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryHamburger()
+        public string ReturnCategory()
         {
             string recipe_category = "Main dish";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsHamburger()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob14";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionHamburger()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk14";
 
@@ -451,28 +507,33 @@ namespace App1
     }
     class Chicken_soup : Recipe
     {
-        public string ReturnNameChicken_soup()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Chicken soup";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryChicken_soup()
+        public string ReturnCategory()
         {
             string recipe_category = "Main dish";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsChicken_soup()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob15";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionChicken_soup()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk15";
 
@@ -481,28 +542,33 @@ namespace App1
     }
     class Pasta_bolognese : Recipe
     {
-        public string ReturnNamePasta_bolognese()
+        string recipe_name;
+        string recipe_category;
+        string recipe_ingredients;
+        string recipe_description;
+
+        public string ReturnName()
         {
             string recipe_name = "Pasta bolognese";
 
             return recipe_name;
         }
 
-        public string ReturnCategoryPasta_bolognese()
+        public string ReturnCategory()
         {
             string recipe_category = "Main dish";
 
             return recipe_category;
         }
 
-        public string ReturnIngredientsPasta_bolognese()
+        public string ReturnIngredients()
         {
             string recipe_ingredients = "Bob16";
 
             return recipe_ingredients;
         }
 
-        public string ReturnDescriptionPasta_bolognese()
+        public string ReturnDescription()
         {
             string recipe_description = "Henk16";
 
