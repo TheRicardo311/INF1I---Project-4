@@ -171,7 +171,7 @@ namespace App1
 
         public string ReturnCategory()
         {
-            string recipe_category = "Desert";
+            string recipe_category = "Dessert";
 
             return recipe_category;
         }
