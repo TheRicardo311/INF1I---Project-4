@@ -7,61 +7,77 @@ namespace App1
 {
     abstract class RecipeFactory
     {
-        public abstract Recipe Create(int id_number);
+        public abstract Recipe Create(string selectedRepice);
 
     }
 
     class ConcreteRecipeFactory : RecipeFactory
     {
-        public override Recipe Create(int id_number)
+        public override Recipe Create(string selectedRepice)
         {
-            if ((id_number == 1))
+            if ((selectedRepice == "French Toast"))
             {
-                return new Banana_split();
+                return new French_Toast();
             }
-            if ((id_number == 2))
+            if ((selectedRepice == "Pancakes"))
             {
-                return new Milkshake();
+                return new Pancakes();
             }
-            if ((id_number == 3))
+            if ((selectedRepice == "Scrambled eggs"))
             {
-                return new Irish_coffee();
+                return new Scrambled_eggs();
             }
-            if ((id_number == 4))
+            if ((selectedRepice == "Chocolate pudding"))
             {
-                return new Biefstuk();
+                return new Chocolate_pudding();
             }
-            if ((id_number == 5))
+            if ((selectedRepice == "Strawberry pudding"))
             {
-                return new Kip_madras();
+                return new Strawberry_pudding();
             }
-            if ((id_number == 6))
+            if ((selectedRepice == "Vanilla pudding"))
             {
-                return new Chili_con_carne();
+                return new Vanilla_pudding();
             }
-            if ((id_number == 7))
+            if ((selectedRepice == "Tiramisu"))
             {
-                return new Zandkoekjes();
+                return new Tiramisu();
             }
-            if ((id_number == 8))
+            if ((selectedRepice == "Brownies"))
             {
-                return new Cake();
+                return new Brownies();
             }
-            if ((id_number == 9))
+            if ((selectedRepice == "Popcorn"))
             {
-                return new Worstenbroodjes();
+                return new Popcorn();
             }
-            if ((id_number == 10))
+            if ((selectedRepice == "Fudge"))
             {
-                return new Omelet();
+                return new Fudge();
             }
-            if ((id_number == 11))
+            if ((selectedRepice == "Nachos"))
             {
-                return new Brood();
+                return new Nachos();
             }
-            if ((id_number == 12))
+            if ((selectedRepice == "Croissants"))
             {
-                return new Aardbeiensmoothie();
+                return new Croissants();
+            }
+            if ((selectedRepice == "Sheperds Pie"))
+            {
+                return new Sheperds_Pie();
+            }
+            if ((selectedRepice == "Hamburger"))
+            {
+                return new Hamburger();
+            }
+            if ((selectedRepice == "Chicken soup"))
+            {
+                return new Chicken_soup();
+            }
+            if ((selectedRepice == "Pasta bolognese"))
+            {
+                return new Pasta_bolognese();
             }
             throw new Exception("Error");
         }

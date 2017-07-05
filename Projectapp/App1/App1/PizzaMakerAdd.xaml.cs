@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,8 +28,6 @@ namespace App1
 
             ListOfToppings.ItemsSource = _toppings;
         }
-
-        // Hieronder staat alle meuk van de mainpage
 
         private void Handle_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -59,7 +58,22 @@ namespace App1
         /// <param name="e"></param>
         private void TapDatTopping(object sender, ItemTappedEventArgs e)
         {
-            Navigation.PushAsync(new PizzaPage());
+            Navigation.PushAsync(new PizzaMaker());
+            
+
         }
-    }
+
+        void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
+            }
+            DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+            //((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
+        }
+
+    };
+
+
 }
