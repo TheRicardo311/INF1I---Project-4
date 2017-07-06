@@ -21,7 +21,7 @@ namespace App1
             "Mozzarella", "Chicken", "Shoarma", "Pepperoni"
         };
 
-        public PizzaMakerAdd()
+        public PizzaMakerAdd(string selectedTopping)
         {
 
             this.Title = "Add your topping";
@@ -32,6 +32,18 @@ namespace App1
             //Display the toppings
 
             ListOfToppings.ItemsSource = _toppings;
+
+            //Label _labelTopping = new Label
+            //{
+            //    Text = "\n\n" + selectedTopping,
+
+
+            //    FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+            //    TextColor = Color.White
+            //};
+
+
+
         }
 
         private void Handle_TextChanged(object sender, TextChangedEventArgs e)
@@ -64,7 +76,6 @@ namespace App1
         private void TapDatTopping(object sender, ItemTappedEventArgs e)
         {
             
-            Navigation.PushAsync(new PizzaMaker());
         }
 
         private void Toppingselected(object sender, SelectedItemChangedEventArgs e)
@@ -74,7 +85,8 @@ namespace App1
             string selectedTopping = e.SelectedItem.ToString();
 
             //IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
-            
+
+            Navigation.PushAsync(new PizzaMaker(selectedTopping));
 
 
             // Shows recipe details page

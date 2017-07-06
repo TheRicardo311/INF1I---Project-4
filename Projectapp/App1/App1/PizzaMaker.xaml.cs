@@ -13,7 +13,7 @@ namespace App1
     public partial class PizzaMaker : ContentPage
     {
 
-        public PizzaMaker()
+        public PizzaMaker(string selectedTopping)
         {
             InitializeComponent();
 
@@ -25,7 +25,7 @@ namespace App1
 
             Label _label = new Label
             {
-                Text = "Catergory" + "\n\n" + Pizza1.Name(),
+                Text = "Catergory" + "\n\n" + Pizza1.Name() + "\n\n" + selectedTopping,
 
 
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
@@ -53,7 +53,9 @@ namespace App1
 
         private void Add_Pizza(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PizzaMakerAdd());
+            string selectedTopping = e.ToString();
+
+            Navigation.PushAsync(new PizzaMakerAdd(selectedTopping));
         }
     }
 }
