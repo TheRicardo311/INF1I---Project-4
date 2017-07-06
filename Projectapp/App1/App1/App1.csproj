@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.Install">
       <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Configuration.Install.dll</HintPath>

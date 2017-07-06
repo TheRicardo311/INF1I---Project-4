@@ -12,14 +12,16 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipeDetailsPage : ContentPage
     {
-        public RecipeDetailsPage(string recipeName, string recipeCategory, string recipeIngredients, string recipeDescription)
+        int rating;
+        public RecipeDetailsPage(string recipeName, string recipeCategory, string recipeIngredients, string recipeDescription, int recipeRating)
         {
             InitializeComponent();
+
+            rating = recipeRating;
 
             // Set title of recipe
             this.Title = recipeName;
             this.BackgroundColor = Color.Black;
-
 
 
             // Set image
@@ -35,8 +37,8 @@ namespace App1
 
                     "Ingredients" + "\n\n" + recipeIngredients + "\n\n\n" +
 
-                    "Steps" + "\n\n" + recipeDescription + "\n", 
-
+                    "Steps" + "\n\n" + recipeDescription + "\n\n\n\n" + 
+                    "You liked this recipe " + rating + " times." + "\n",
 
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 TextColor = Color.White
@@ -50,15 +52,30 @@ namespace App1
                 Margin = new Thickness(20, 10, 20, 20)
             };
 
-            // Build the page.
-            this.Content = new StackLayout
+            // Set layout
+            var sl = new StackLayout{};
+            sl.Children.Add(scrollView);
+
+            //Right bar button
+            ToolbarItems.Add(new ToolbarItem("Like", "like1.png", () =>
             {
-                Children =
-                {
-                    _image,
-                    scrollView
-                }
-            };
+                rating += 1;
+                _label.Text = "Catergory" + "\n\n" + recipeCategory + "\n\n\n" +
+
+                    "Ingredients" + "\n\n" + recipeIngredients + "\n\n\n" +
+
+                    "Steps" + "\n\n" + recipeDescription + "\n\n\n\n" +
+                    "You liked this recipe " + rating + " times." + "\n";
+            }));
+
+            // Show content
+            Content = sl;
+            return;
+        }
+
+        public void LikeBtn(object sender, EventArgs e)
+        {
+
         }
     }
 }

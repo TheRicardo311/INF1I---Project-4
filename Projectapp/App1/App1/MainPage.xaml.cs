@@ -77,9 +77,10 @@ namespace App1
             string recipeName = createNewrecipe.Create(selectedRecipe).ReturnName();
             string recipeCategory = createNewrecipe.Create(selectedRecipe).ReturnCategory();
             string recipeIngredients = createNewrecipe.Create(selectedRecipe).ReturnIngredients();
+            int recipeRating = createNewrecipe.Create(selectedRecipe).ReturnRating();
 
             // Shows recipe details page
-            Navigation.PushAsync(new RecipeDetailsPage(recipeName, recipeCategory, recipeIngredients, recipeDescription));
+            Navigation.PushAsync(new RecipeDetailsPage(recipeName, recipeCategory, recipeIngredients, recipeDescription, recipeRating));
         }
     }
 }
