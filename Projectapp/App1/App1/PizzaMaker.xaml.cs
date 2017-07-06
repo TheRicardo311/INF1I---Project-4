@@ -13,7 +13,7 @@ namespace App1
     public partial class PizzaMaker : ContentPage
     {
 
-        public PizzaMaker(string Name)
+        public PizzaMaker()
         {
             InitializeComponent();
 
@@ -41,14 +41,14 @@ namespace App1
             };
 
             // Build the page.
-            this.Content = new StackLayout
+            /*this.Content = new StackLayout
             {
                 Children =
                 {
                     _image,
                     scrollView
                 }
-            };
+            };*/
         }
 
         private void Add_Pizza(object sender, EventArgs e)

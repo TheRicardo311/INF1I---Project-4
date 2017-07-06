@@ -14,6 +14,7 @@ namespace App1
     public partial class PizzaMakerAdd : ContentPage
     {
 
+        
         //Creating a list of toppings, the dirty way
         private readonly List<string> _toppings = new List<string>
         {
@@ -22,6 +23,10 @@ namespace App1
 
         public PizzaMakerAdd()
         {
+
+            this.Title = "Add your topping";
+            this.BackgroundColor = Color.Black;
+
             InitializeComponent();
 
             //Display the toppings
@@ -68,7 +73,7 @@ namespace App1
 
             string selectedTopping = e.SelectedItem.ToString();
 
-            IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
+            //IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
             
 
 
