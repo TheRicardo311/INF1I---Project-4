@@ -7,7 +7,6 @@ namespace App1
 {
     interface IPizza
     {
-        string Name();
-        string Recommandation();
+        
     }
 }

@@ -21,9 +21,9 @@ namespace App1
             "Mozzarella", "Chicken", "Shoarma", "Pepperoni"
         };
 
-        public PizzaMakerAdd(string selectedTopping)
-        {
+        public PizzaMakerAdd()
 
+        {          
             this.Title = "Add your topping";
             this.BackgroundColor = Color.Black;
 
@@ -67,26 +67,37 @@ namespace App1
 
         }
 
-
         /// <summary>
         /// When you tap something from the list
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void TapDatTopping(object sender, ItemTappedEventArgs e)
+        private void TapDatTopping(object sender, SelectedItemChangedEventArgs e)
         {
             
-        }
 
-        private void Toppingselected(object sender, SelectedItemChangedEventArgs e)
-        {
             // Set selected item to string
 
             string selectedTopping = e.SelectedItem.ToString();
 
             //IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
 
-            Navigation.PushAsync(new PizzaMaker(selectedTopping));
+            //if (selectedTopping == "Pepperoni")
+            //{
+            //    Topping createNewTopping = new Pepperoni(new PlainPizza());
+            //}
+              
+            Topping createNewTopping = new Topping(new PlainPizza());
+                string ToppingName = createNewTopping.ExtractName();
+                string ToppingRecommendation = createNewTopping.ExtractAanrader();
+            
+
+            NavigationPage newPage = new NavigationPage(new PizzaMaker(selectedTopping, ToppingName, ToppingRecommendation));
+            Navigation.PushAsync(newPage);
+
+
+            //Navigation.PushAsync(new PizzaMaker(selectedTopping, ToppingName, ToppingRecommendation));
+
 
 
             // Shows recipe details page

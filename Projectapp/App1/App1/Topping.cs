@@ -5,10 +5,18 @@ using System.Text;
 
 namespace App1
 {
-    //Decorator for the toppings of the pizza categorie
-    class Topping : IPizza
+    interface ToppingInfo
     {
+        string ExtractName();
+        string ExtractAanrader();
 
+
+    }
+    //Decorator for the toppings of the pizza categorie
+    class Topping : IPizza, ToppingInfo
+    {
+        string topping_Name;
+        string topping_Aanrader;
         //New temporary pizza
         public IPizza tempPizza;
         
@@ -17,14 +25,15 @@ namespace App1
             tempPizza = newPizza;
         }
 
-        public string Name()
+        public string ExtractAanrader()
         {
-            return null;
+        
+            return topping_Aanrader;
         }
 
-        public string Recommandation()
+        public string ExtractName()
         {
-            return null;
+            return topping_Name;
         }
     }
 
@@ -39,10 +48,25 @@ namespace App1
         }
     }
     */
-    class Pepperoni : Topping
+    class Pepperoni : Topping , ToppingInfo
     {
         public Pepperoni(IPizza newPizza) : base(newPizza)
         {
+ 
+        }
+
+        public new string ExtractAanrader()
+        {
+            string topping_aanrader = "Pepperoni is erg lekker bij aids";
+
+            return topping_aanrader;
+        }
+
+        public new string ExtractName()
+        {
+            string topping_name = "Pepperoni";
+
+            return topping_name;
         }
     }
 

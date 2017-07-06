@@ -13,7 +13,7 @@ namespace App1
     public partial class PizzaMaker : ContentPage
     {
 
-        public PizzaMaker(string selectedTopping)
+        public PizzaMaker(string selectedTopping, string ToppingName, string ToppingRecommendation)
         {
             InitializeComponent();
 
@@ -23,11 +23,21 @@ namespace App1
 
             PlainPizza Pizza1 = new PlainPizza();
 
+            Button clickbutton = new Button
+            {
+                Image = "add.png",
+
+                BackgroundColor = Color.Transparent,
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.End,
+
+            };
+            clickbutton.Clicked += Add_Pizza;
+
             Label _label = new Label
             {
-                Text = "Catergory" + "\n\n" + Pizza1.Name() + "\n\n" + selectedTopping,
-
-
+                Text = "Category" + "\n\n" + Pizza1.Name() + "\n\n" + ToppingRecommendation,
+                  
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 TextColor = Color.White
             };
@@ -39,23 +49,22 @@ namespace App1
                 Content = _label,
                 Margin = new Thickness(20, 10, 20, 20)
             };
-
+  
             // Build the page.
-            /*this.Content = new StackLayout
+            this.Content = new StackLayout
             {
                 Children =
                 {
-                    _image,
+                    clickbutton,
                     scrollView
                 }
-            };*/
+            };
         }
 
         private void Add_Pizza(object sender, EventArgs e)
         {
-            string selectedTopping = e.ToString();
-
-            Navigation.PushAsync(new PizzaMakerAdd(selectedTopping));
+         
+            Navigation.PushAsync(new PizzaMakerAdd());
         }
     }
 }
