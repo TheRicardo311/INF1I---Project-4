@@ -5,131 +5,179 @@ using System.Text;
 
 namespace App1
 {
-    interface ToppingInfo
+    abstract class APizza
     {
-        string ExtractName();
-        string ExtractAanrader();
-
-
+        abstract public void getDescription();
     }
-    //Decorator for the toppings of the pizza categorie
-    class Topping : IPizza, ToppingInfo
+
+    //class Pizza : APizza
+    //{
+    //    private string adding;
+    //    public override void getDescription()
+    //    {
+    //        adding = 
+    //    }
+    //}
+
+    class ToppingDecorator : APizza
     {
-        string topping_Name;
-        string topping_Aanrader;
-        //New temporary pizza
-        public IPizza tempPizza;
-        
-        public Topping (IPizza newPizza)
+        private APizza tempPizza;
+        //private string Bottom;
+        public ToppingDecorator(APizza newPizza)
         {
             tempPizza = newPizza;
         }
-
-        public string ExtractAanrader()
+        public override void getDescription()
         {
-        
-            return topping_Aanrader;
-        }
-
-        public string ExtractName()
-        {
-            return topping_Name;
+            // Console.WriteLine(Bottom);
+            tempPizza.getDescription();
         }
     }
 
-    /*class Mozzarella : Topping
+    class Mozzarella : ToppingDecorator
     {
 
-        public Mozzarella(IPizza newPizza) : base(newPizza) 
+        private string Topping;
+        public Mozzarella(APizza newPizza) : base(newPizza)
         {
-            string Name = "Mozzarella";
-
-            string Recommandation = "Lekker met kip";
+            Topping = "Added Mozzarella";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
-    */
-    class Pepperoni : Topping , ToppingInfo
+
+    class Chicken : ToppingDecorator
     {
-        public Pepperoni(IPizza newPizza) : base(newPizza)
+
+        private string Topping;
+        public Chicken(APizza newPizza) : base(newPizza)
         {
- 
+            Topping = "Added Chicken";
         }
-
-        public new string ExtractAanrader()
+        public override void getDescription()
         {
-            string topping_aanrader = "Pepperoni is erg lekker bij aids";
-
-            return topping_aanrader;
-        }
-
-        public new string ExtractName()
-        {
-            string topping_name = "Pepperoni";
-
-            return topping_name;
+            base.getDescription();
         }
     }
 
-    class Chicken : Topping
+    class Pepperoni : ToppingDecorator
     {
-        public Chicken(IPizza newPizza) : base(newPizza)
+
+        private string Topping;
+        public Pepperoni(APizza newPizza) : base(newPizza)
         {
+            Topping = "A Pepperoni pizza ^.^";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
-    class Shoarma : Topping
+
+    class FourCheese : ToppingDecorator
     {
-        public Shoarma(IPizza newPizza) : base(newPizza)
+
+        private string Topping;
+        public FourCheese(APizza newPizza) : base(newPizza)
         {
+            Topping = "A FourCheese pizza ^.^";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
         }
     }
+
+    class Hawai : ToppingDecorator
+    {
+
+        private string Topping;
+        public Hawai(APizza newPizza) : base(newPizza)
+        {
+            Topping = "A Hawai pizza ^.^";
+        }
+        public override void getDescription()
+        {
+            base.getDescription();
+        }
+    }
+        //interface ToppingInfo
+        //{
+        //    string ExtractName();
+        //    string ExtractAanrader();
+
+
+        //}
+        ////Decorator for the toppings of the pizza categorie
+        //class Topping : IPizza, ToppingInfo
+        //{
+        //    string topping_Name;
+        //    string topping_Aanrader;
+        //    //New temporary pizza
+        //    public IPizza tempPizza;
+
+        //    public Topping (IPizza newPizza)
+        //    {
+        //        tempPizza = newPizza;
+        //    }
+
+        //    public string ExtractAanrader()
+        //    {
+
+        //        return topping_Aanrader;
+        //    }
+
+        //    public string ExtractName()
+        //    {
+        //        return topping_Name;
+        //    }
+        //}
+
+        ///*class Mozzarella : Topping
+        //{
+
+        //    public Mozzarella(IPizza newPizza) : base(newPizza) 
+        //    {
+        //        string Name = "Mozzarella";
+
+        //        string Recommandation = "Lekker met kip";
+        //    }
+        //}
+        //*/
+        //class Pepperoni : Topping , ToppingInfo
+        //{
+        //    public Pepperoni(IPizza newPizza) : base(newPizza)
+        //    {
+
+        //    }
+
+        //    public new string ExtractAanrader()
+        //    {
+        //        string topping_aanrader = "Pepperoni is erg lekker bij aids";
+
+        //        return topping_aanrader;
+        //    }
+
+        //    public new string ExtractName()
+        //    {
+        //        string topping_name = "Pepperoni";
+
+        //        return topping_name;
+        //    }
+        //}
+
+        //class Chicken : Topping
+        //{
+        //    public Chicken(IPizza newPizza) : base(newPizza)
+        //    {
+        //    }
+        //}
+        //class Shoarma : Topping
+        //{
+        //    public Shoarma(IPizza newPizza) : base(newPizza)
+        //    {
+        //    }
+        //}
 }
-//Meat Pizza Toppings
-//Sausage, caramelized onions and fennel
-//Pepperoni, tomatoes, mushrooms and onion
-//Pepperoni, sausage, green pepper, onion and mushroom
-//BBQ sauce, topped with grilled chicken and cheddar cheese
-//Thousand Island dressing, topped with sauerkraut, corned beef or pastrami and Swiss cheese
-//Corn and spicy Italian salami
-//Gorgonzola, bacon, apples and red onion
-//Roasted red peppers, chorizo and feta
-//Sausage and pineapple
-//Buffalo chicken and blue cheese
-//Gorgonzola, artichoke hearts, prosciutto, red onion and tomato
-//Figs, prosciutto and caramelized onions
-//Grilled chicken, avocado and cherry tomatoes
-//Bacon and avocado
-//Spinach, caramelized onion and bacon
-//Roasted Brussels sprouts and bacon or pancetta
-//Seafood Pizza Toppings
-//Anchovies, tomato, ricotta and mustard greens
-//Mozzarella and canned smoked oysters
-//Pesto, butterflied prawns, mushrooms and Parmesan
-//Sardines, red onions and black olives
-//Alfredo sauce, shrimp and tomatoes
-//Canned tuna fish, red onions and black olives
-//Mascarpone or cream cheese, topped with smoked salmon, capers and red onion
-//Cajun-seasoned shrimp, red bell peppers, red onions and garlic
-//Vegetarian Pizza Toppings
-//Pesto with white beans, tomato, arugula and Parmesan
-//Pesto with artichoke hearts, feta, sun-dried tomatoes and Parmesan
-//Alfredo sauce, spinach, mushrooms, red bell peppers and Asiago
-//Garlic olive oil with Grúyere, caramelized onions and baked butternut squash
-//Goat cheese with arugula and red onion
-//Jalapeño peppers and pineapple
-//Fried eggplant slices and black olives
-//Sauceless with garlic, lime, avocado and fried green tomatoes
-//Spinach, artichoke hearts, garlic and red onion
-//Brie and artichokes
-//Olive oil with paper-thin sliced potatoes, sage and Fontina
-//Figs, artichoke hearts, Gorgonzola and balsamic vinegar
-//Alfredo sauce with artichoke hearts, garlic and jalapeños
-//Caramelized fennel, onion, olives and Fontina
-//Goat cheese with red grapes and rosemary
-//Roasted peppers, capers and ricotta
-//Portobello mushrooms and kale
-//Sauceless with Fontina, kale, sweet potato and red onion
-//Caramelized onion, kale and green apples
-//Brie and caramelized onion
-//Burrata, arugula and paper-thin sliced lemons
-//Brussels sprouts, red onion and ricotta
-//Goat cheese with roasted beets and beet greens or arugula
