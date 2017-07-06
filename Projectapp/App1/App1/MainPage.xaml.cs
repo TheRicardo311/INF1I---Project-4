@@ -20,6 +20,7 @@ namespace App1
 
             // Display the recipes
             ListOfRecipes.ItemsSource = TheRecipes;
+
         }
 
         /// <summary>

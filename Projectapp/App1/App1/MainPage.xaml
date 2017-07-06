@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:App1"
              x:Class="App1.MainPage">
 
-    <Grid x:Name="TopBar" Margin="0" BackgroundColor="Black">
+    <!--<Grid x:Name="TopBar" Margin="0" BackgroundColor="Black">-->
         <!-- Rows --><!--
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -35,7 +35,7 @@
                 <BoxView Color="White" HeightRequest="300"/>
             </StackLayout>
         </ScrollView>-->
-        <StackLayout Margin="20">
+        <StackLayout Margin="5">
             <SearchBar x:Name="MainSearchBar" BackgroundColor="White" 
                        SearchButtonPressed="MainSearchBar_SearchButtonPressed" 
                        Placeholder="Search"
@@ -43,6 +43,6 @@
             <ListView x:Name="ListOfRecipes" BackgroundColor="White" ItemSelected="RecipeSelected"/>
         </StackLayout>
 
-    </Grid>
+    <!--</Grid>-->
 
 </ContentPage>

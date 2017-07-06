@@ -33,7 +33,7 @@ namespace App1
             // Set description as label
             Label _label = new Label
             {
-                Text = "Catergory" + "\n\n" + recipeCategory + "\n\n\n" + 
+                Text = "Category" + "\n\n" + recipeCategory + "\n\n\n" + 
 
                     "Ingredients" + "\n\n" + recipeIngredients + "\n\n\n" +
 
@@ -60,7 +60,7 @@ namespace App1
             ToolbarItems.Add(new ToolbarItem("Like", "like1.png", () =>
             {
                 rating += 1;
-                _label.Text = "Catergory" + "\n\n" + recipeCategory + "\n\n\n" +
+                _label.Text = "Category" + "\n\n" + recipeCategory + "\n\n\n" +
 
                     "Ingredients" + "\n\n" + recipeIngredients + "\n\n\n" +
 
