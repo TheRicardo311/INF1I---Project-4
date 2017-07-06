@@ -62,8 +62,22 @@ namespace App1
         /// <param name="e"></param>
         private void Suggestions_Button(object sender, EventArgs e)
         {
+
+            ConcreteRecipeFactory createNewrecipe = new ConcreteRecipeFactory();
+
+            // Set random recipe as string
+            string The_Ultimate_Recipe = new Suggestions().GetRandomRecipe();
+
+            // Set values of recipes
+            createNewrecipe.Create(The_Ultimate_Recipe);
+            string recipeDescription = createNewrecipe.Create(The_Ultimate_Recipe).ReturnDescription();
+            string recipeName = createNewrecipe.Create(The_Ultimate_Recipe).ReturnName();
+            string recipeCategory = createNewrecipe.Create(The_Ultimate_Recipe).ReturnCategory();
+            string recipeIngredients = createNewrecipe.Create(The_Ultimate_Recipe).ReturnIngredients();
+            int recipeRating = createNewrecipe.Create(The_Ultimate_Recipe).ReturnRating();
+
             // Display the suggestions page
-            Detail = new NavigationPage(new SuggestionPage());
+            Detail = new NavigationPage(new SuggestionPage(recipeName, recipeCategory, recipeIngredients, recipeDescription, recipeRating));
 
             // Hides the menu
             IsPresented = false;

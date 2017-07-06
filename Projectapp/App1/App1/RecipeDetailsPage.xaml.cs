@@ -72,10 +72,5 @@ namespace App1
             Content = sl;
             return;
         }
-
-        public void LikeBtn(object sender, EventArgs e)
-        {
-
-        }
     }
 }

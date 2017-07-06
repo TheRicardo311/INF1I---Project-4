@@ -8,10 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace App1.Properties {
     using System;
     
     
+=======
+namespace App1.Properties
+{
+
+
+>>>>>>> d3d3b401ee9a93dc4b66c43832cf7fd64e20a97a
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>

@@ -4,11 +4,4 @@
              x:Class="App1.SuggestionPage"
              Title="Suggestions"
              BackgroundColor="Black">
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="I am a suggestion page" />
-        </StackLayout>
-    </ContentPage.Content>
-    
 </ContentPage>
