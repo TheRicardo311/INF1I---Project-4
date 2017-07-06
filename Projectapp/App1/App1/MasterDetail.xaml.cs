@@ -123,7 +123,7 @@ namespace App1
         private void Pizza_Button(object sender, EventArgs e)
         {
             // Display the suggestions page
-            Detail = new NavigationPage(new PizzaMaker("","",""));
+            Detail = new NavigationPage(new PizzaMaker(""));
             
             // Hides the menu
             IsPresented = false;

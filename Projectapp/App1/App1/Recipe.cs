@@ -67,7 +67,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Pancakes : Recipe
+    public class Pancakes : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -115,7 +115,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Scrambled_eggs : Recipe
+    public class Scrambled_eggs : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -164,7 +164,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Croissants : Recipe
+    public class Croissants : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -211,7 +211,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Chocolate_pudding : Recipe
+    public class Chocolate_pudding : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -259,7 +259,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Strawberry_pudding : Recipe
+    public class Strawberry_pudding : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -307,7 +307,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Vanilla_pudding : Recipe
+    public class Vanilla_pudding : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -355,7 +355,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Tiramisu : Recipe
+    public class Tiramisu : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -403,7 +403,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Brownies : Recipe
+    public class Brownies : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -451,7 +451,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Popcorn : Recipe
+    public class Popcorn : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -499,7 +499,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Fudge : Recipe
+    public class Fudge : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -547,7 +547,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Nachos : Recipe
+    public class Nachos : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -595,7 +595,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Shepherds_pie : Recipe
+    public class Shepherds_pie : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -643,7 +643,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Hamburger : Recipe
+    public class Hamburger : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -691,7 +691,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Chicken_soup : Recipe
+    public class Chicken_soup : Recipe
     {
         string recipe_name;
         string recipe_category;
@@ -739,7 +739,7 @@ namespace App1
             return recipe_rating;
         }
     }
-    class Pasta_bolognese : Recipe
+    public class Pasta_bolognese : Recipe
     {
         string recipe_name;
         string recipe_category;
