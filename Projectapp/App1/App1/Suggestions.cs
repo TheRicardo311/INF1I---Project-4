@@ -5,8 +5,19 @@ using System.Text;
 
 namespace App1
 {
-    class Suggestions
+    public class Suggestions
     {
-        //Ricardo is een henk
+        Random rnd = new Random();
+
+        public string GetRandomRecipe()
+        {
+            List<string> RandomRecipeList = new List<string>
+            { "French Toast", "Pancakes", "Scrambled eggs", "Chocolate pudding", "Strawberry pudding", "Vanilla pudding", "Tiramisu", "Brownies", "Popcorn", "Fudge", "Nachos", "Croissants", "Sheperds Pie", "Hamburger", "Chicken soup", "Pasta bolognese" };
+
+            string RandomRecipe = RandomRecipeList[rnd.Next(RandomRecipeList.Count)];
+
+            return RandomRecipe;
+        }
+
     }
 }
