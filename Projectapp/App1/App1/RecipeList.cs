@@ -9,9 +9,6 @@ namespace App1
     public class Singleton
     {
         private static Singleton firstInstance = null;
-
-        static Boolean firstThread = true;
-
         
         public static Singleton getInstance()
         {
