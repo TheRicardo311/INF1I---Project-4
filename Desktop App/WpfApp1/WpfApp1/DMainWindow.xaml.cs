@@ -12,14 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace App1
     
-{
+{   
+
+
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
     public partial class Window7 : Window
     {
+
 
         //Home Button via adapter
         public Window7()
@@ -89,7 +92,7 @@ namespace WpfApp1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
 
