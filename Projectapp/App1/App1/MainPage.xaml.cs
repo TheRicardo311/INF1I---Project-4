@@ -9,18 +9,17 @@ namespace App1
 {
     public partial class MainPage : ContentPage
     {
-        // List of Recipes
-        private readonly List<string> _recipes = new List<string>
-        {
-            "French Toast", "Pancakes", "Scrambled eggs", "Croissants", "Chocolate pudding" , "Strawberry pudding", "Vanilla pudding", "Tiramisu", "Brownies", "Popcorn", "Fudge", "Nachos", "Sheperds Pie", "Hamburger", "Chicken soup", "Pasta bolognese"
-        };
+        List<string> _recipes;
 
-        public MainPage()
+        public MainPage(List<string> TheRecipes, string _title)
         {
             InitializeComponent();
+            _recipes = TheRecipes;
+
+            this.Title = _title;
 
             // Display the recipes
-            ListOfRecipes.ItemsSource = _recipes;
+            ListOfRecipes.ItemsSource = TheRecipes;
         }
 
         /// <summary>
