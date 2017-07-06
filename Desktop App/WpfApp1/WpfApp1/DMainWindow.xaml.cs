@@ -33,6 +33,11 @@ namespace WpfApp1
             this.Close();
         }
 
+        //Search Button
+        private void DSearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Search results for {this.DSearchBox.Text}");
+        }
 
         //Pizza Button
         private void DPizzaButton_Click(object sender, RoutedEventArgs e)

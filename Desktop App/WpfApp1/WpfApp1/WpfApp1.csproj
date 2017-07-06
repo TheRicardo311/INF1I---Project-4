@@ -142,10 +142,7 @@
     <Resource Include="fff.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Projectapp\App1\App1\App1.csproj">
-      <Project>{66a6e265-6591-48f9-b6cc-96eea849f520}</Project>
-      <Name>App1</Name>
-    </ProjectReference>
+    <Resource Include="ASDF.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

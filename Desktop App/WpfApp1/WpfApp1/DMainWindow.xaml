@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        
         mc:Ignorable="d"
         Title="Window3" Height="720" Width="1280"
         Background="Black">
@@ -36,7 +37,7 @@
                 <Button Cursor="Hand" x:Name="DMainDishButton" Margin="0 0 0 0" Click="DMainDishButton_Click" Grid.Column="4" Content="MainDish" Background="White"/>
                 <Button Cursor="Hand" x:Name="DDesertButton" Margin="0 0 0 0" Click="DDesertButton_Click" Grid.Column="5" Content="Desert" Background="White"/>
                 <TextBox x:Name="DSearchBox" Text="Enter tags" Margin="10 0 0 0" Grid.Column="6"/>
-                <Button Cursor="Hand" x:Name="DSearchButton" Click ="MainSearchBar_SearchButtonPressed" Margin="0 0 0 0" Grid.Column="7" Content="Search" Background="White"/>
+                <Button Cursor="Hand" x:Name="DSearchButton" Click ="DSearchButton_Click" Margin="0 0 0 0" Grid.Column="7" Content="Search" Background="White"/>
                 <Button Cursor="Hand" x:Name="DBookmarksButton" Click="DBookmarksButton_Click" Margin="10 0 10 0" Grid.Column="8" Content="Log In" Background="White"/>
 
             </Grid>
@@ -49,18 +50,18 @@
             </Grid>
             <!-- Text -->
             <Grid Name="DMainWindowGrid">
-                <Viewbox HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White" Text="{Binding Path=Recipe.French_toast.ReturnName}"/>
+                <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
+                    <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White" Text="{Binding Path=App1.Recipe.French_toast}"/>
 
 
                 </Viewbox>
-                <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Text2"/>
+                <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="abaspdogjw"/>
                 </Viewbox>
-                <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
+                <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
                     <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Text3"/>
                 </Viewbox>
-                <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
+                <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
                     <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Text4"/>
                 </Viewbox>
             </Grid>
