@@ -13,12 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace WpfApp1
+    
 {
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
     public partial class Window7 : Window
     {
+
         //Home Button via adapter
         public Window7()
         {
@@ -31,11 +33,6 @@ namespace WpfApp1
             this.Close();
         }
 
-        //Search Button
-        private void DSearchButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show($"Search results for {this.DSearchBox.Text}");
-        }
 
         //Pizza Button
         private void DPizzaButton_Click(object sender, RoutedEventArgs e)
