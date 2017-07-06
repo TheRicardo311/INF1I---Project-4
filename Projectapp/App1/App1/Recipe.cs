@@ -187,15 +187,14 @@ namespace App1
 
         public string ReturnIngredients()
         {
-            string recipe_ingredients = "Bob4";
+            string recipe_ingredients = "- 500g French Type 55 flour or unbleached all-purpose flour / plain flour (extra for dusting)" + "\n" + "- 140g water" + "\n" + "- 140g whole milk (you can take it straight from the fridge)" + "\n" + "- 55g sugar" + "\n" + "- 40g soft unsalted butter" + "\n" + "- 11g instant yeast" + "\n" + "- 12g salt" + "\n" + "- 280g cold unsalted butter for laminating" + "\n" + "- 1 egg + 1 tsp water for the egg wash";
 
             return recipe_ingredients;
         }
 
         public string ReturnDescription()
         {
-            string recipe_description = "Henk4";
-
+            string recipe_description = "Day 1 – Make initial dough" + "\n" + "21.00 h – Knead for 3 minutes and store in fridge for 12 hours" + "\n\n" + "Day 2 – Laminate the dough" + "\n" + "09.00 h – Make butter slab and refrigerate till needed" + "\n" + "09.05 h – Roll dough disc into square" + "\n" + "09.10 h – Seal butter in dough" + "\n" + "09.15 h – Roll out to 20 cm x 60 cm and fold" + "\n" + "Refrigerate 30 minutes" + "\n" + "09.50 h – Rotate 90 degrees" + "\n" + "Roll out to 20 cm x 60 cm and fold" + "\n" + "Refrigerate 30 minutes" + "\n" + "10.25 h – Rotate 90 degrees" + "\n" + "Roll out to 20 cm x 60 cm and fold" + "\n" + "11.00 h – Refrigerate until day 3" + "\n\n" + "Day 3 – Dividing, Shaping, proofing and baking" + "\n" + "09.00 h – Roll out to 20 cm x 110 cm – part 1" + "\n" + "09.05 h – Often needed!Take 20 min.fridge time if length not in one go" + "\n" + "09.25 h – Roll out to 20 cm x 110 cm – part 2" + "\n" + "09.30 h – Divide and shape the croissants" + "\n" + "09.40 h – First coat of egg wash" + "\n" + "09.45 h – Proof to perfection(indication 2 hours)" + "\n" + "11.45 h – Second coat of egg wash" + "\n" + "11.50 h – Bake for 15 - 18 minutes" + "\n" + "12.10 h – Ready!";
             return recipe_description;
         }
         public string ReturnImage()
