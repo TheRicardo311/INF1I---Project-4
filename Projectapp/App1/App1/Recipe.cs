@@ -5,7 +5,7 @@ using System.Text;
 
 namespace App1
 {
-    interface Recipe
+    public interface Recipe
     {
         string ReturnName();
         string ReturnCategory();
@@ -14,7 +14,7 @@ namespace App1
         string ReturnImage();
         int ReturnRating();
     }
-    class French_toast : Recipe
+    public class French_toast : Recipe
     {
         //Type declaration
         string recipe_name;
