@@ -90,5 +90,33 @@ namespace App1
         {
 
         }
+
+        private void Snacks_1(object sender, RoutedEventArgs e)
+        {
+            Brownies DBrownies = new Brownies();
+            DBrownies.Show();
+            this.Close();
+        }
+
+        private void Snacks_2(object sender, RoutedEventArgs e)
+        {
+            Nachos DNachos = new Nachos();
+            DNachos.Show();
+            this.Close();
+        }
+
+        private void Snacks_3(object sender, RoutedEventArgs e)
+        {
+            Fudge DFudge = new Fudge();
+            DFudge.Show();
+            this.Close();
+        }
+
+        private void Snacks_4(object sender, RoutedEventArgs e)
+        {
+            Popcorn DPopcorn = new Popcorn();
+            DPopcorn.Show();
+            this.Close();
+        }
     }
 }

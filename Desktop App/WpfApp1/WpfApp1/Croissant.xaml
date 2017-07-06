@@ -1,11 +1,11 @@
-﻿<Window x:Class="App1.Window3"
+﻿<Window x:Class="App1.Croissant"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App1"
         mc:Ignorable="d"
-        Title="Breakfast" Height="720" Width="1280"
+        Title="Croissant" Height="720" Width="1280"
         Background="Black">
     <Border Padding="10">
         <StackPanel>
@@ -42,7 +42,7 @@
             </Grid>
             <!-- Images -->
             <Grid>
-                
+
                 <Button Content="French Toast" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
                 <Button Content="Pancakes" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_1"/>
                 <Button Content="Scrambled eggs" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="91" Height="20" Click="Button_Click_2"/>
@@ -50,20 +50,20 @@
             </Grid>
             <!-- Text -->
             <Grid>
-                
+
                 <!--<Viewbox HorizontalAlignment="Left" Width="300">
                     <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White">
                 Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text
                     </TextBlock>
                 </Viewbox>-->
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients: "/><LineBreak/><Run Text="500 g French Type 55 flour or unbleached all-purpose flour / plain flour (extra for dusting)"/><LineBreak/><Run Text="140 g water"/><LineBreak/><Run Text="140 g whole milk (you can take it straight from the fridge)"/><LineBreak/><Run Text="55 g sugar"/><LineBreak/><Run Text="40 g soft unsalted butter"/><LineBreak/><Run Text="11 g instant yeast"/><LineBreak/><Run Text="12 g salt"/><LineBreak/><Run Text="280 g cold unsalted butter for laminating"/><LineBreak/><Run/></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Croissant"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Snijd driehoekjes uit het deeg en rol op tot een croissant. Leg de croissants op een met bakpapier beklede bakplaat, dek af met een theedoek of ingevet plasticfolie en laat circa 90 minuten rijzen. Verwarm de oven voor op 230 °C bak de croissantjes in circa 25 minuten goudbruin en krokant."/>
                 </Viewbox>
             </Grid>
         </StackPanel>

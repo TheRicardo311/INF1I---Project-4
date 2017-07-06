@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace App1
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for sheperdsPie.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class sheperdsPie : Window
     {
-        public Window2()
+        public sheperdsPie()
         {
             InitializeComponent();
         }
-        ///Home button
         public void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
             Window7 DMainWindow = new Window7();

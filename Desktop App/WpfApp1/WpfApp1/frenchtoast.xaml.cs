@@ -15,16 +15,15 @@ using System.Windows.Shapes;
 namespace App1
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for frenchtoast.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class frenchtoast : Window
     {
-        public Window2()
+        public frenchtoast()
         {
             InitializeComponent();
         }
-        ///Home button
-        public void DHomeButton_Click(object sender, RoutedEventArgs e)
+        private void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
             Window7 DMainWindow = new Window7();
             DMainWindow.Show();
@@ -84,37 +83,31 @@ namespace App1
             Dbookmarks.Show();
             this.Close();
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void MD_1(object sender, RoutedEventArgs e)
-        {
-            Spaghetti DSpagetti = new Spaghetti();
-            DSpagetti.Show();
+            frenchtoast DFrench_Toast = new frenchtoast();
+            DFrench_Toast.Show();
             this.Close();
         }
 
-        private void MD_2(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ChickenSoup DChickenSoup = new ChickenSoup();
-            DChickenSoup.Show();
+            Pancakes DPancakes = new Pancakes();
+            DPancakes.Show();
             this.Close();
         }
 
-        private void MD_3(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Hamburger DHamburger = new Hamburger();
-            DHamburger.Show();
+            Scrambledeggs DScrambleeggs = new Scrambledeggs();
+            DScrambleeggs.Show();
             this.Close();
         }
 
-        private void MD_4(object sender, RoutedEventArgs e)
+        private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            sheperdsPie DSheperdsPie = new sheperdsPie();
-            DSheperdsPie.Show();
+            Croissant DCroissant = new Croissant();
+            DCroissant.Show();
             this.Close();
         }
     }

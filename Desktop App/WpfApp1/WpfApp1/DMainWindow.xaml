@@ -43,27 +43,11 @@
             </Grid>
             <!-- Images -->
             <Grid>
-                <Image HorizontalAlignment="Left" Height="300" Margin="20 20 0 0" Source="/App1;component/300x300.gif"/>
-                <Image HorizontalAlignment="left" Height="300" Margin="320 20 0 0" Source="/App1;component/fff.png"/>
-                <Image HorizontalAlignment="Left" Height="300" Margin="620 20 0 0" Source="/App1;component/300x300.gif"/>
-                <Image HorizontalAlignment="left" Height="300" Margin="920 20 0 0" Source="/App1;component/fff.png"/>
+                
             </Grid>
             <!-- Text -->
             <Grid Name="DMainWindowGrid">
-                <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
-                    <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White" Text="help"/>
-
-
-                </Viewbox>
-                <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="abaspdogjw"/>
-                </Viewbox>
-                <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Text3"/>
-                </Viewbox>
-                <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Text4"/>
-                </Viewbox>
+                
             </Grid>
             
         </StackPanel>

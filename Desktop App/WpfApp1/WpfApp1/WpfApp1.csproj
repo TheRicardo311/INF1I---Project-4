@@ -55,7 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Brownies.xaml.cs">
+      <DependentUpon>Brownies.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Button_Adapter.cs" />
+    <Compile Include="ChickenSoup.xaml.cs">
+      <DependentUpon>ChickenSoup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Croissant.xaml.cs">
+      <DependentUpon>Croissant.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DSnacks.xaml.cs">
       <DependentUpon>DSnacks.xaml</DependentUpon>
     </Compile>
@@ -81,6 +90,39 @@
     <Compile Include="DMainWindow.xaml.cs">
       <DependentUpon>DMainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fudge.xaml.cs">
+      <DependentUpon>Fudge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hamburger.xaml.cs">
+      <DependentUpon>Hamburger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nachos.xaml.cs">
+      <DependentUpon>Nachos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Popcorn.xaml.cs">
+      <DependentUpon>Popcorn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scrambledeggs.xaml.cs">
+      <DependentUpon>Scrambledeggs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sheperdsPie.xaml.cs">
+      <DependentUpon>sheperdsPie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spaghetti.xaml.cs">
+      <DependentUpon>Spaghetti.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Brownies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChickenSoup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Croissant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DSnacks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,8 +151,50 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frenchtoast.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fudge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hamburger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Nachos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pancakes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Popcorn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scrambledeggs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sheperdsPie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spaghetti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frenchtoast.xaml.cs">
+      <DependentUpon>frenchtoast.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pancakes.xaml.cs">
+      <DependentUpon>Pancakes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace App1
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for Hamburger.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Hamburger : Window
     {
-        public Window2()
+        public Hamburger()
         {
             InitializeComponent();
         }
-        ///Home button
         public void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
             Window7 DMainWindow = new Window7();

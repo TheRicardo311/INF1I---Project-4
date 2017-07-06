@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace App1
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for Brownies.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Brownies : Window
     {
-        public Window2()
+        public Brownies()
         {
             InitializeComponent();
         }
-        ///Home button
-        public void DHomeButton_Click(object sender, RoutedEventArgs e)
+        //Home Button
+        private void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
             Window7 DMainWindow = new Window7();
             DMainWindow.Show();
@@ -90,32 +90,33 @@ namespace App1
 
         }
 
-        private void MD_1(object sender, RoutedEventArgs e)
+        private void Snacks_1(object sender, RoutedEventArgs e)
         {
-            Spaghetti DSpagetti = new Spaghetti();
-            DSpagetti.Show();
+            Brownies DBrownies = new Brownies();
+            DBrownies.Show();
             this.Close();
         }
 
-        private void MD_2(object sender, RoutedEventArgs e)
+        private void Snacks_2(object sender, RoutedEventArgs e)
         {
-            ChickenSoup DChickenSoup = new ChickenSoup();
-            DChickenSoup.Show();
+            Nachos DNachos = new Nachos();
+            DNachos.Show();
             this.Close();
         }
 
-        private void MD_3(object sender, RoutedEventArgs e)
+        private void Snacks_3(object sender, RoutedEventArgs e)
         {
-            Hamburger DHamburger = new Hamburger();
-            DHamburger.Show();
+            Fudge DFudge = new Fudge();
+            DFudge.Show();
             this.Close();
         }
 
-        private void MD_4(object sender, RoutedEventArgs e)
+        private void Snacks_4(object sender, RoutedEventArgs e)
         {
-            sheperdsPie DSheperdsPie = new sheperdsPie();
-            DSheperdsPie.Show();
+            Popcorn DPopcorn = new Popcorn();
+            DPopcorn.Show();
             this.Close();
         }
     }
 }
+
