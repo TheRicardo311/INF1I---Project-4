@@ -11,10 +11,10 @@ namespace App1
 
         public string GetRandomRecipe()
         {
-            List<string> RandomRecipeList = new List<string>
-            { "French Toast", "Pancakes", "Scrambled eggs", "Chocolate pudding", "Strawberry pudding", "Vanilla pudding", "Tiramisu", "Brownies", "Popcorn", "Fudge", "Nachos", "Croissants", "Sheperds Pie", "Hamburger", "Chicken soup", "Pasta bolognese" };
+            Singleton newInstance = Singleton.getInstance();
 
-            string RandomRecipe = RandomRecipeList[rnd.Next(RandomRecipeList.Count)];
+            List<string> RandomRecipeLists = newInstance.CreateList();
+            string RandomRecipe = RandomRecipeLists[rnd.Next(RandomRecipeLists.Count)];
 
             return RandomRecipe;
         }

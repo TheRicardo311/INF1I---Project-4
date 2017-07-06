@@ -74,10 +74,7 @@ namespace App1
         /// <param name="e"></param>
         private void TapDatTopping(object sender, SelectedItemChangedEventArgs e)
         {
-            
-
             // Set selected item to string
-
             string selectedTopping = e.SelectedItem.ToString();
 
             //IPizza createNewPlainPizza = new Topping(new Mozzarella(new PlainPizza()));
