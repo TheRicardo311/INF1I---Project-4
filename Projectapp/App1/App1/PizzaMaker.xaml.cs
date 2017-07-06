@@ -13,7 +13,7 @@ namespace App1
     public partial class PizzaMaker : ContentPage
     {
 
-        public PizzaMaker(string selectedTopping, string ToppingName, string ToppingRecommendation)
+        public PizzaMaker(string selectedTopping/*, string ToppingName, string ToppingRecommendation*/)
         {
             InitializeComponent();
 
@@ -22,6 +22,7 @@ namespace App1
             this.BackgroundColor = Color.Black;
 
             PlainPizza Pizza1 = new PlainPizza();
+            Chicken myChicken = new Chicken(Pizza1);
 
             Button clickbutton = new Button
             {
@@ -36,7 +37,7 @@ namespace App1
 
             Label _label = new Label
             {
-                Text = "Category" + "\n\n" + Pizza1.Name() + "\n\n" + ToppingRecommendation,
+                Text = Pizza1.Name() + "\n\n" + myChicken.Name(),
                   
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 TextColor = Color.White

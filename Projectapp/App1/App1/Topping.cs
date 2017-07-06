@@ -7,7 +7,8 @@ namespace App1
 {
     abstract class APizza
     {
-        abstract public void getDescription();
+        abstract public string Name();
+        //abstract public void getDescription();
     }
 
     //class Pizza : APizza
@@ -27,11 +28,15 @@ namespace App1
         {
             tempPizza = newPizza;
         }
-        public override void getDescription()
+        public override string Name()
         {
-            // Console.WriteLine(Bottom);
-            tempPizza.getDescription();
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
         }
+        //public override void getDescription()
+        //{
+        //    // Console.WriteLine(Bottom);
+        //    tempPizza.getDescription();
+        //}
     }
 
     class Mozzarella : ToppingDecorator
@@ -42,10 +47,14 @@ namespace App1
         {
             Topping = "Added Mozzarella";
         }
-        public override void getDescription()
+        public override string Name()
         {
-            base.getDescription();
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
         }
+        //public override void getDescription()
+        //{
+        //    base.getDescription();
+        //}
     }
 
     class Chicken : ToppingDecorator
@@ -56,10 +65,14 @@ namespace App1
         {
             Topping = "Added Chicken";
         }
-        public override void getDescription()
+        public override string Name()
         {
-            base.getDescription();
+            return "Chicken : Good with grilled cheese";
         }
+        //public override void getDescription()
+        //{
+        //    base.getDescription();
+        //}
     }
 
     class Pepperoni : ToppingDecorator
@@ -70,10 +83,14 @@ namespace App1
         {
             Topping = "A Pepperoni pizza ^.^";
         }
-        public override void getDescription()
+        public override string Name()
         {
-            base.getDescription();
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
         }
+        //public override void getDescription()
+        //{
+        //    base.getDescription();
+        //}
     }
 
     class FourCheese : ToppingDecorator
@@ -84,10 +101,14 @@ namespace App1
         {
             Topping = "A FourCheese pizza ^.^";
         }
-        public override void getDescription()
+        public override string Name()
         {
-            base.getDescription();
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
         }
+        //public override void getDescription()
+        //{
+        //    base.getDescription();
+        //}
     }
 
     class Hawai : ToppingDecorator
@@ -98,10 +119,14 @@ namespace App1
         {
             Topping = "A Hawai pizza ^.^";
         }
-        public override void getDescription()
+        public override string Name()
         {
-            base.getDescription();
+            return "De bodem van je pizza, hier ga je dingen aan toevoegen";
         }
+        //public override void getDescription()
+        //{
+        //    base.getDescription();
+        //}
     }
         //interface ToppingInfo
         //{

@@ -87,12 +87,12 @@ namespace App1
             //    Topping createNewTopping = new Pepperoni(new PlainPizza());
             //}
               
-            Topping createNewTopping = new Topping(new PlainPizza());
-                string ToppingName = createNewTopping.ExtractName();
-                string ToppingRecommendation = createNewTopping.ExtractAanrader();
+            //Topping createNewTopping = new Topping(new PlainPizza());
+            //    string ToppingName = createNewTopping.ExtractName();
+            //    string ToppingRecommendation = createNewTopping.ExtractAanrader();
             
 
-            NavigationPage newPage = new NavigationPage(new PizzaMaker(selectedTopping, ToppingName, ToppingRecommendation));
+            NavigationPage newPage = new NavigationPage(new PizzaMaker(selectedTopping /*ToppingName*//*, ToppingRecommendation*/));
             Navigation.PushAsync(newPage);
 
 
