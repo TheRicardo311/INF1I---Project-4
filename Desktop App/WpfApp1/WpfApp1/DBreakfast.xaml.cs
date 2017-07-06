@@ -85,9 +85,26 @@ namespace App1
             this.Close();
         }
 
+        private void Recipe1_viewbox(object sender, RoutedEventArgs e)
+        {
+            Viewbox Recipe1 = new Viewbox();
+            Recipe1.HorizontalAlignment = HorizontalAlignment.Left;
+            Recipe1.Width = 300;
+            
+            TextBlock Recipe1Text = new TextBlock();
+            Recipe1Text.MaxWidth = 200;
+            Recipe1Text.Margin = new Thickness(0, 0, 5, 0);
+            Recipe1Text.TextWrapping = TextWrapping.Wrap;
+            Recipe1Text.Foreground = new SolidColorBrush(Colors.White);
+
+            Recipe1Text.Text = "Let's see how this works";
+
+            
+        }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            this.Show(Recipe1_viewbox);
         }
 
         
