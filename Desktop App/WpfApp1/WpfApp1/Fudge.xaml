@@ -1,11 +1,11 @@
-﻿<Window x:Class="App1.Window1"
+﻿<Window x:Class="App1.Fudge"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App1"
         mc:Ignorable="d"
-        Title="Window1" Height="720" Width="1280"
+        Title="Fudge" Height="720" Width="1280"
         Background="Black">
     <Border Padding="10">
         <StackPanel>
@@ -49,7 +49,16 @@
             </Grid>
             <!-- Text -->
             <Grid>
-               
+
+                <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients"/><LineBreak/><Run Text="125g of butter"/><LineBreak/><Run Text="390g tin of condensed milk"/><LineBreak/><Run Text="2 tablespoons of golden syrup"/><LineBreak/><Run Text="220g of brown sugar"/><LineBreak/><Run Text="200g of white chocolate - broken into pieces"/></TextBlock>
+                </Viewbox>
+                <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Fudge"/>
+                </Viewbox>
+                <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock MaxWidth="200" Margin="5 0 5 0" FontSize="10" TextWrapping="Wrap" Foreground="White"><Run Text="1."/><Run Text=" "/><Run Text="Break the white chocolate into pieces and chop. Set aside until needed."/><LineBreak/><Run Text="2. Line the base and sides of a 28cm x 18cm slice tin with baking paper and set aside until needed."/><LineBreak/><Run Text="3. Add the butter, golden syrup, condensed milk and brown sugar to a medium sized saucepan and cook over a low heat for approximately 10 minutes until the fudge mixture has started to thicken and the colour of the ingredients has turned a lovely golden brown."/><LineBreak/><Run Text="4. Remove the saucepan from the heat and add the chopped white chocolate and quickly stir to combine."/><LineBreak/><Run Text="5.Quickly pour the Caramel Fudge into your prepared tin and gently smooth the surface."/><LineBreak/><Run Text="6."/><Run Text=" "/><Run Text="Place the Caramel Fudge into the fridge for 6 hours (preferably overnight) to set before cutting into small pieces to enjoy."/><LineBreak/><Run/></TextBlock>
+                </Viewbox>
             </Grid>
         </StackPanel>
 
