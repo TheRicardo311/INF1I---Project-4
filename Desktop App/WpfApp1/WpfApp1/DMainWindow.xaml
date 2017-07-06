@@ -4,11 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App1"
-<<<<<<< HEAD
         xmlns:custom="clr-namespace:App1.Properties"
-=======
-        
->>>>>>> d3d3b401ee9a93dc4b66c43832cf7fd64e20a97a
+
         mc:Ignorable="d"
         Title="Window3" Height="720" Width="1280"
         Background="Black">
@@ -47,10 +44,10 @@
             </Grid>
             <!-- Images -->
             <Grid>
-                <Image HorizontalAlignment="Left" Height="300" Margin="20 20 0 0" Source="/WpfApp1;component/300x300.gif"/>
-                <Image HorizontalAlignment="left" Height="300" Margin="320 20 0 0" Source="/WpfApp1;component/fff.png"/>
-                <Image HorizontalAlignment="Left" Height="300" Margin="620 20 0 0" Source="/WpfApp1;component/300x300.gif"/>
-                <Image HorizontalAlignment="left" Height="300" Margin="920 20 0 0" Source="/WpfApp1;component/fff.png"/>
+                <Image HorizontalAlignment="Left" Height="300" Margin="20 20 0 0" Source="/App1;component/300x300.gif"/>
+                <Image HorizontalAlignment="left" Height="300" Margin="320 20 0 0" Source="/App1;component/fff.png"/>
+                <Image HorizontalAlignment="Left" Height="300" Margin="620 20 0 0" Source="/App1;component/300x300.gif"/>
+                <Image HorizontalAlignment="left" Height="300" Margin="920 20 0 0" Source="/App1;component/fff.png"/>
             </Grid>
             <!-- Text -->
             <Grid Name="DMainWindowGrid">
