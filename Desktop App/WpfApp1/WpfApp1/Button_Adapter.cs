@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 //Adapter, turns MainWindow's DAdapterHomeButton into any other DHomeButton (uses MainDish DHomeButton in this case)
-namespace WpfApp1
+namespace App1
 {
     class Button_Adapter : Window2
     {
