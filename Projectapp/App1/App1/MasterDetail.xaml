@@ -26,7 +26,7 @@
                     <Button Image="main_dish.png" Text="Main Dish" TextColor="White" BackgroundColor="Transparent" Clicked="Main_DishBtn"/>
                     
 
-                    <!--<Button Image="bookmark.png" Text="Bookmarks" TextColor="White" BackgroundColor="Transparent" Clicked="Bookmarks_Button"/>-->
+                    <Button Image="bookmark.png" Text="Bookmarks" TextColor="White" BackgroundColor="Transparent" Clicked="Bookmarks_Button"/>
 
                     <Button Image="cake.png" Text="Suggestions" TextColor="White" BackgroundColor="Transparent" Clicked="Suggestions_Button"/>
 
