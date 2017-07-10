@@ -56,7 +56,7 @@ namespace App1
             var sl = new StackLayout{};
             sl.Children.Add(scrollView);
 
-            //Right bar button
+            //Like bar button
             ToolbarItems.Add(new ToolbarItem("Like", "like1.png", () =>
             {
                 rating += 1;
@@ -66,6 +66,12 @@ namespace App1
 
                     "Steps" + "\n\n" + recipeDescription + "\n\n\n\n" +
                     "You liked this recipe " + rating + " times." + "\n";
+            }));
+
+            //Bookmark bar button
+            ToolbarItems.Add(new ToolbarItem("Bookmark", "bookmark2.png", () =>
+            {
+                // Click to bookmark
             }));
 
             // Show content
