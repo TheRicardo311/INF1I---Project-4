@@ -6,63 +6,170 @@ using System;
 
 namespace WPFApp1
 {
-    public class SQLiteDb
+    public class DataAccess
     {
-        string _path;
-        public SQLiteDb(string path)
-        {
-            _path = path;
-        }
+        SQLiteConnection conn = new SQLiteConnection("Data Source=Project4DB.sqlite;Version=3;");
 
-        public void Create()
+        public string user_name;
+        public string user_pass;
+
+        //Open the connection to the database
+        private void OpenConnection()
         {
-            SQLiteConnection conn = new SQLiteConnection("Data Source=Project4DB.sqlite;Version=3;");
             conn.Open();
+        }
+
+        //Close the connection to the database
+        private void CloseConnection()
+        {
             conn.Close();
+        }
+
+        //Insert user statement
+        public void InsertUser(string user_name, string user_pass)
+        {
+            string query = "INSERT INTO tableinfo (user_id, 4) VALUES('Bob', 'Henkmeister')";
+
+            //Open connection
+            this.OpenConnection();
+
+            //Create command for the query
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+
+            //Execute command
+            cmd.ExecuteNonQuery();
+
+            //Close connection
+            this.CloseConnection();
+        }
+
+        //Insert user statement
+        public void InsertLikes(string user_name, string recept)
+        {
+            string query = "INSERT INTO tableinfo (user_name, 4) VALUES('Bob', 'Henkmeister')";
+
+            //Open connection
+            this.OpenConnection();
+
+            //Create command for the query
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+
+            //Execute command
+            cmd.ExecuteNonQuery();
+
+            //Close connection
+            this.CloseConnection();
 
         }
-        public partial class rating
-    {
-        [PrimaryKey, AutoIncrement]
-        public Int64 Id { get; set; }
 
-        [NotNull]
-        public String recipe_name { get; set; }
+        //Update statement
+        public void Update()
+        {
+            string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
 
-        [NotNull]
-        public Int64 rating { get; set; }
+            //Open connection
+            this.OpenConnection();
 
-    }
+            //Create the command
+            SQLiteCommand cmd = new SQLiteCommand();
 
-    public partial class recept
-    {
-        [NotNull]
-        public Int64 Id { get; set; }
+            //Assign the query using CommandText
+            cmd.CommandText = query;
 
-        [NotNull]
-        public String recipe_name { get; set; }
+            //Assign the connection using Connection
+            cmd.Connection = conn;
 
-        [NotNull]
-        public String category { get; set; }
+            //Execute query
+            cmd.ExecuteNonQuery();
 
-        [NotNull]
-        public String ingredient_list { get; set; }
+            //Close connection
+            this.CloseConnection();
+        }
 
-        [NotNull]
-        public String preparation { get; set; }
+        //Delete statement
+        public void Delete()
+        {
+            string query = "DELETE FROM tableinfo WHERE name='John Smith'";
 
-    }
+            //Open connection
+            this.OpenConnection();
 
-    public partial class user
-    {
-        [NotNull]
-        public Int64 Id { get; set; }
+            //Create the command
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
 
-        [NotNull]
-        public String user_name { get; set; }
+            //Execute query
+            cmd.ExecuteNonQuery();
 
-        [NotNull]
-        public String password { get; set; }
+            //Close connection
+            this.CloseConnection();
+        }
+
+        //Select statement
+        //Gives an error about a list, no idea what is going on
+       /* public List<string>[] Select()
+        {
+            string query = "SELECT * FROM tableinfo";
+
+            //Create a list to store the result
+            List<string>[] list = new List<string>[3];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+            list[2] = new List<string>();
+
+            //Open connection
+            this.OpenConnection();
+
+            //Create command
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+
+            //Create a data reader and Execute the command
+            SQLiteDataReader dataReader = cmd.ExecuteReader();
+
+            //Read the data and store them in the list
+            while (dataReader.Read())
+            {
+                list[0].Add(dataReader["id"] + "");
+                list[1].Add(dataReader["name"] + "");
+                list[2].Add(dataReader["age"] + "");
+            }
+
+            //close Data Reader
+            dataReader.Close();
+
+            //close Connection
+            this.CloseConnection();
+
+            //return list to be displayed
+            return list;
+
+
+
+        }
+
+        */
+
+        //Count statement
+        public int Count()
+        {
+            string query = "SELECT Count(*) FROM tableinfo";
+            int Count = -1;
+
+            //Open Connection
+            this.OpenConnection();
+
+            //Create Mysql Command
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+
+            //ExecuteScalar will return one value
+            Count = int.Parse(cmd.ExecuteScalar() + "");
+
+            //close Connection
+            this.CloseConnection();
+
+            return Count;
+
+
+        }
 
     }
 
