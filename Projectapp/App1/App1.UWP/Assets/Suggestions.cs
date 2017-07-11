@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace App1.Droid
+namespace WPFApp1.Droid
 {
     class Suggestions
     {

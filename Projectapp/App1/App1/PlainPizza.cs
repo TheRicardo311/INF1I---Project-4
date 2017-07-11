@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App1
+namespace WPFApp1
 {
     //The plain pizza class, this is the file the decorator uses to add toppings to
     class PlainPizza : APizza

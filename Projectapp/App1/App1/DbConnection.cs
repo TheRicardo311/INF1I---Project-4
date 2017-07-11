@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
+
 //using MySql.Data.MySqlClient;
 
 
-namespace App1
+namespace WPFApp1
 {
 
     public class DbConnect
     {
+        public SQLiteconnection
+        SQLiteConnection connection = new SQLiteConnection();
         /*
         private MySqlConnection connection;
         private string server;

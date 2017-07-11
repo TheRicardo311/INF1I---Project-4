@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace App1
+namespace WPFApp1
 {
     /// <summary>
     /// Interaction logic for frenchtoast.xaml

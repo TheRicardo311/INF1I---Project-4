@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App1
+namespace WPFApp1
 {
     //The database needs to perform some actions, like sending and retrieving information
     //These actions are declared in this class

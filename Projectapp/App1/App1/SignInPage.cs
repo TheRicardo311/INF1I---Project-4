@@ -6,7 +6,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace App1
+namespace WPFApp1
 {
     public class SignInPage : ContentPage
     {

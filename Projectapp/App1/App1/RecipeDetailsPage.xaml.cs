@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App1
+namespace WPFApp1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipeDetailsPage : ContentPage

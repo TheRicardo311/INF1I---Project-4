@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App1
+namespace WPFApp1
 {
     public class SignInViewModel : INotifyPropertyChanged
     {

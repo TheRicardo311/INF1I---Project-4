@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace App1
+namespace WPFApp1
 {
     public class MainDish : IRecipeCategories
     {
