@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              
              
-             x:Class="WPFApp1.UserControl"/>
-    <TextBlock x:Name = "TextBlockFrenchToast" FontSize ="15" HorizontalAlignment ="Center"
+             x:Class="WPFApp1.UserControl">
+    
+        <TextBlock x:Name = "TextBlockFrenchRoast" FontSize ="15" HorizontalAlignment ="Center"
                Text = ""/>
-<UserControl>
+    
+</UserControl>
