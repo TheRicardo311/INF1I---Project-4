@@ -87,9 +87,14 @@ namespace WPFApp1
             this.Close();
         }
 
-        private void DFrenchToastButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             WindowContent.Content = new FrenchToastUserControl();
+
+
+            
+                
+            
         }
 
         public void Recipe1_viewbox()
@@ -125,12 +130,7 @@ namespace WPFApp1
             //return Recipe1_viewbox
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            frenchtoast DFrench_Toast = new frenchtoast();
-            DFrench_Toast.Show();
-            this.Close();
-        }
+        
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
