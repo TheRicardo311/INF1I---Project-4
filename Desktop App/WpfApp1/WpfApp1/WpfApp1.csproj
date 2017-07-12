@@ -112,6 +112,8 @@
     <Compile Include="Popcorn.xaml.cs">
       <DependentUpon>Popcorn.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Recipe.cs" />
+    <Compile Include="RecipeFactory.cs" />
     <Compile Include="Scrambledeggs.xaml.cs">
       <DependentUpon>Scrambledeggs.xaml</DependentUpon>
     </Compile>
