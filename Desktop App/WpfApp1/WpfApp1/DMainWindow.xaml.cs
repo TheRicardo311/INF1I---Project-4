@@ -13,8 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace WPFApp1
-    
-{   
+
+{
 
 
     /// <summary>
@@ -92,9 +92,18 @@ namespace WPFApp1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
+        private void DFrenchToastButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowContent.Content = new FrenchToastUserControl();
+            this.Close();
+        }
 
+        private void DPancakesButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

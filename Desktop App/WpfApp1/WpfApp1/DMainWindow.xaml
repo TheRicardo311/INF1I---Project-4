@@ -27,7 +27,7 @@
                     <ColumnDefinition Width="0.4*"/>
                     <ColumnDefinition Width="*"/>
 
-
+        
                 </Grid.ColumnDefinitions>
 
                 <Button Cursor="Hand" x:Name="DAdapterHomeButton" Click="DAdapterHomeButton_Click" Grid.Column="0" Content="Home" Background="White"/>
@@ -43,13 +43,13 @@
             </Grid>
             <!-- Images -->
             <Grid>
-                
+               
             </Grid>
             <!-- Text -->
             <Grid Name="DMainWindowGrid">
                 
             </Grid>
-            
+            <ContentControl x:Name="WindowContent" />
         </StackPanel>
 
     </Border>
