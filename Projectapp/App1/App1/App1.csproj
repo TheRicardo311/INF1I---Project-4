@@ -43,7 +43,6 @@
     </Compile>
     <Compile Include="Breakfast.cs" />
     <Compile Include="CodeAdapter.cs" />
-    <Compile Include="DataAccess.cs" />
     <Compile Include="DbActions.cs" />
     <Compile Include="DbConnection.cs" />
     <Compile Include="Desert.cs" />

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
+//using System.Data.SQLite;
 
 //using MySql.Data.MySqlClient;
 
@@ -10,8 +10,8 @@ namespace WPFApp1
 
     public class DbConnect
     {
-        public SQLiteconnection
-        SQLiteConnection connection = new SQLiteConnection();
+        //public SQLiteconnection
+        //SQLiteConnection connection = new SQLiteConnection();
         /*
         private MySqlConnection connection;
         private string server;
