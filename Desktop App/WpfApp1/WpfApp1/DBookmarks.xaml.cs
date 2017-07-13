@@ -19,6 +19,8 @@ namespace WPFApp1
     /// </summary>
     public partial class Window6 : Window
     {
+        DataBaseYo _testDB = new DataBaseYo();
+
         //Home Button
         public Window6()
         {
@@ -85,9 +87,17 @@ namespace WPFApp1
         //Login screen Button
         private void DBookmarksButton_Click(object sender, RoutedEventArgs e)
         {
-            Window6 Dbookmarks = new Window6();
-            Dbookmarks.Show();
-            this.Close();
+            string _inputUsername = DNameBox.Text;
+
+            bool acces = _testDB.getUsername(_inputUsername);
+
+            if (acces)
+            {
+                // Show the bookmarks
+                Window7 Dbookmarks = new Window7();
+                Dbookmarks.Show();
+                this.Close();
+            }
         }
     }
 }
