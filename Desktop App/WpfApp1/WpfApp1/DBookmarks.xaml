@@ -41,7 +41,7 @@
             </Grid>
 
             <!--Login boxes-->
-            <StackPanel>
+            <StackPanel x:Name="StackP" Visibility="Visible">
                 <TextBlock Margin="0 10 0 10" Foreground="White">Log In</TextBlock>
                 <Grid>
                     <TextBlock Margin="0 10 0 10" Foreground="White">Username</TextBlock>
@@ -54,8 +54,20 @@
             </StackPanel>
             
             <!-- Bookmarks button -->
-            <Grid>
+            <Grid x:Name="Gridu" Visibility="Visible">
                 <Button Cursor="Hand" x:Name="DBookmarksButton" Click="DBookmarksButton_Click" Margin="10 0 1000 0" Content="Bookmarks" Background="White"/>
+            </Grid>
+            
+            <Grid x:Name="ShowYouself" Visibility="Hidden">
+                <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                </Viewbox>
+                <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
+                </Viewbox>
+                <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
+                </Viewbox>
             </Grid>
            
         </StackPanel>

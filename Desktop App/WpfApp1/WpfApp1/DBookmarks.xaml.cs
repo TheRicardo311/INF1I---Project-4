@@ -94,9 +94,21 @@ namespace WPFApp1
             if (acces)
             {
                 // Show the bookmarks
-                Window7 Dbookmarks = new Window7();
-                Dbookmarks.Show();
-                this.Close();
+                //Window7 Dbookmarks = new Window7();
+                //Dbookmarks.Show();
+                //this.Close();
+
+                string _recipe = _testDB.getRecipeBookmark(_inputUsername);
+                string _ingr = _testDB.getText(_recipe, "ingredients");
+                string _desc = _testDB.getText(_recipe, "description");
+
+                TitleHere.Text = _recipe;
+                Ingr.Text = _ingr;
+                Desc.Text = _desc;
+
+                StackP.Visibility = Visibility.Hidden;
+                Gridu.Visibility = Visibility.Hidden;
+                ShowYouself.Visibility = Visibility.Visible;
             }
         }
     }

@@ -290,5 +290,25 @@ namespace WPFApp1
 
             return null;
         }
+
+        public string getRecipeBookmark(string _userName)
+        {
+            string output;
+
+            this.OpenConnection();
+
+            string sqlQuery = @"SELECT * FROM bookmarks WHERE user_name=" + "'" + _userName + "'";
+            cmd = new MySqlCommand(sqlQuery, connection);
+
+            mdr = cmd.ExecuteReader();
+            while (mdr.Read())
+            {
+                output = mdr.GetString("recipe_name");
+                this.CloseConnection();
+                return output;
+            }
+            this.CloseConnection();
+            return null;
+        }
     }
 }
