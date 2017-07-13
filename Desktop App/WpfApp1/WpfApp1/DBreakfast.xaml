@@ -65,8 +65,9 @@
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
 
                 </Viewbox>
+                <ContentControl x:Name="WindowContent" />
             </Grid>
-            <ContentControl x:Name="WindowContent" />
+            
         </StackPanel>
 
     </Border>

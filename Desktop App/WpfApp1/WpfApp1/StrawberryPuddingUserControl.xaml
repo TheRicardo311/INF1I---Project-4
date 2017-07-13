@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              
              
-             x:Class="WPFApp1.UserControl">
+             x:Class="WPFApp1.StrawberryPuddingUserControl">
 
     <TextBlock x:Name = "TextBlockStrawberryPudding" FontSize ="15" HorizontalAlignment ="Left"
                Width="50" Height="50" Margin="50, 50, 0, 0" Background ="White" Text = "{ Binding StrawberryPudding }" />
