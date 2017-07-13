@@ -64,12 +64,24 @@
     <Compile Include="Brownies.xaml.cs">
       <DependentUpon>Brownies.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BrowniesUserControl.xaml.cs">
+      <DependentUpon>BrowniesUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Button_Adapter.cs" />
     <Compile Include="ChickenSoup.xaml.cs">
       <DependentUpon>ChickenSoup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChickenSoupUserControl.xaml.cs">
+      <DependentUpon>ChickenSoupUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolatePuddingUserControl.xaml.cs">
+      <DependentUpon>ChocolatePuddingUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Croissant.xaml.cs">
       <DependentUpon>Croissant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CroissantsUserControl.xaml.cs">
+      <DependentUpon>CroissantsUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="DSnacks.xaml.cs">
@@ -103,37 +115,82 @@
     <Compile Include="Fudge.xaml.cs">
       <DependentUpon>Fudge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FudgeUserControl.xaml.cs">
+      <DependentUpon>FudgeUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Hamburger.xaml.cs">
       <DependentUpon>Hamburger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HamburgerUserControl.xaml.cs">
+      <DependentUpon>HamburgerUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Nachos.xaml.cs">
       <DependentUpon>Nachos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NachosUserControl.xaml.cs">
+      <DependentUpon>NachosUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PancakesUserControl.xaml.cs">
+      <DependentUpon>PancakesUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PastaBologneseUserControl.xaml.cs">
+      <DependentUpon>PastaBologneseUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Popcorn.xaml.cs">
       <DependentUpon>Popcorn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopcornUserControl.xaml.cs">
+      <DependentUpon>PopcornUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Recipe.cs" />
     <Compile Include="RecipeFactory.cs" />
     <Compile Include="Scrambledeggs.xaml.cs">
       <DependentUpon>Scrambledeggs.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ScrambledEggsUserControl.xaml.cs">
+      <DependentUpon>ScrambledEggsUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sheperdsPie.xaml.cs">
       <DependentUpon>sheperdsPie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ShepherdsPieUserControl.xaml.cs">
+      <DependentUpon>ShepherdsPieUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Spaghetti.xaml.cs">
       <DependentUpon>Spaghetti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StrawberryPuddingUserControl.xaml.cs">
+      <DependentUpon>StrawberryPuddingUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TiramisuUserControl.xaml.cs">
+      <DependentUpon>TiramisuUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VanillaPuddingUserControl.xaml.cs">
+      <DependentUpon>VanillaPuddingUserControl.xaml</DependentUpon>
     </Compile>
     <Page Include="Brownies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="BrowniesUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="ChickenSoup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ChickenSoupUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="ChocolatePuddingUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Croissant.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CroissantsUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="DSnacks.xaml">
       <SubType>Designer</SubType>
@@ -175,33 +232,66 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FudgeUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Hamburger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HamburgerUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Nachos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NachosUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Pancakes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PancakesUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="PastaBologneseUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Popcorn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PopcornUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Scrambledeggs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScrambledEggsUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="sheperdsPie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ShepherdsPieUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Spaghetti.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StrawberryPuddingUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="TiramisuUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="VanillaPuddingUserControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
