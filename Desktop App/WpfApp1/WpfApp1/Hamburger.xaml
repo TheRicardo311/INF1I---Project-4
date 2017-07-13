@@ -50,13 +50,13 @@
             <!-- Text -->
             <Grid>
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text=" Makes 4 burgers"/><LineBreak/><Run Text="1-1/2 to 2 pounds ground beef (fat content of about 18 percent)"/><LineBreak/><Run Text="4 ounces (1 cup) coarsely grated cheddar, pepper Jack, smoked Gouda, or other favorite cheese"/><LineBreak/><Run Text="Coarse sea salt and freshly ground black pepper"/><LineBreak/><Run Text="4 hamburger buns or Kaiser rolls, cut sides lightly buttered"/><LineBreak/><Run Text="4 Boston or Bibb lettuce leaves"/><LineBreak/><Run Text="1 luscious red ripe tomato, thinly sliced"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Hamburger"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" FontSize="10" TextWrapping="Wrap" Foreground="White"><Run Text="Place the beef in a mixing bowl. Mix in the cheese with a wooden spoon."/><LineBreak/><Run Text="Form the beef into four patties, each about one inch thick and slightly larger in diameter than the bun. Work with a light touch, handling the meat as little as possible. Make a slight depression in the center — the patty should be slightly concave. Arrange them on a plate lined with plastic wrap and cover with more plastic wrap. Store in the refrigerator until ready to cook. (Tip: You can form the burgers up to six hours ahead.)"/><LineBreak/><Run Text="Just before cooking, season the tops of the burgers with salt and pepper. (Note: You'll need less salt than for a normal burger, as many cheeses are salty already.)"/><LineBreak/><Run Text="Set up your grill for direct grilling and preheat to high. Ideally you'll grill over a wood fire or over charcoal or gas with a handful of soaked hardwood chips. Brush and oil the grill grate. Arrange the burgers on the grate. Grill until the bottoms are browned, three to five minutes. Gently invert the burgers, using a spatula. Season the other side with salt and pepper. Continue grilling the burgers until cooked to taste, seven to nine minutes in all for medium doneness — 160 degrees in the center when read on an instant-read meat thermometer inserted through the side of the burger."/><LineBreak/><Run Text="Line the bottom bun halves with lettuce leaves. Place the burger on the lettuce and top with tomato and any desired condiments."/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

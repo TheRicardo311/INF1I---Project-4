@@ -50,20 +50,14 @@
             </Grid>
             <!-- Text -->
             <Grid>
-
-                <!--<Viewbox HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White">
-                Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text
-                    </TextBlock>
-                </Viewbox>-->
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients:"/><LineBreak/><Run Text="1 1/2 cups all-purpose flour"/><LineBreak/><Run Text="3 1/2 teaspoons baking powder"/><LineBreak/><Run Text="1 teaspoon salt"/><LineBreak/><Run Text="1 tablespoon white sugar"/><LineBreak/><Run Text="1 1/4 cups milk"/><LineBreak/><Run Text="1 egg"/><LineBreak/><Run Text="3 tablespoons butter, melted"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Pancakes"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth."/><LineBreak/><Run Text="Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

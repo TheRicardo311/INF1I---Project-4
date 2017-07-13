@@ -50,20 +50,14 @@
             </Grid>
             <!-- Text -->
             <Grid>
-
-                <!--<Viewbox HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="0 0 5 0" TextWrapping="Wrap" Foreground="White">
-                Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text Block of text
-                    </TextBlock>
-                </Viewbox>-->
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients: "/><LineBreak/><Run Text="500 g French Type 55 flour or unbleached all-purpose flour / plain flour (extra for dusting)"/><LineBreak/><Run Text="140 g water"/><LineBreak/><Run Text="140 g whole milk (you can take it straight from the fridge)"/><LineBreak/><Run Text="55 g sugar"/><LineBreak/><Run Text="40 g soft unsalted butter"/><LineBreak/><Run Text="11 g instant yeast"/><LineBreak/><Run Text="12 g salt"/><LineBreak/><Run Text="280 g cold unsalted butter for laminating"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Croissant"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Snijd driehoekjes uit het deeg en rol op tot een croissant. Leg de croissants op een met bakpapier beklede bakplaat, dek af met een theedoek of ingevet plasticfolie en laat circa 90 minuten rijzen. Verwarm de oven voor op 230 °C bak de croissantjes in circa 25 minuten goudbruin en krokant."/>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

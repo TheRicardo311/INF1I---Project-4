@@ -89,12 +89,9 @@ namespace WPFApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WindowContent.Content = new FrenchToastUserControl();
-
-
-            
-                
-            
+            frenchtoast DFrench_Toast = new frenchtoast();
+            DFrench_Toast.Show();
+            this.Close();
         }
 
         public void Recipe1_viewbox()

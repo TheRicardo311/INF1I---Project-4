@@ -49,15 +49,14 @@
             </Grid>
             <!-- Text -->
             <Grid>
-
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients"/><LineBreak/><Run Text="1/2 cup unpopped popcorn kernels"/><LineBreak/><Run Text="1/2 cup butter"/><LineBreak/><Run Text="1/4 cup sugar"/><LineBreak/><Run Text="1 tablespoon water"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Popcorn"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Pop the popcorn. (I use an air popper, but any method is fine.)"/><LineBreak/><Run Text="On the stove, melt the butter. Add sugar and bring to a boil. Boil about 2 minutes."/><LineBreak/><Run Text="Add water and stir well. Quickly pour over popped corn, and toss to coat."/><LineBreak/><Run Text="Chill the popcorn in the fridge for 15-20 minutes before serving."/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

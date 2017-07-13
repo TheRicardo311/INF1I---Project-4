@@ -49,15 +49,14 @@
             </Grid>
             <!-- Text -->
             <Grid>
-
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingr"/><Run Text="e"/><Run Text="dients"/><LineBreak/><Run Text="175g packet plain tortilla"/><LineBreak/><Run Text=" chips"/><LineBreak/><Run Text="225g jar salsa"/><LineBreak/><Run Text="a few sliced spring onions"/><LineBreak/><Run Text="a good chunk of cheese"/><LineBreak/><Run Text="a pinch of crushed chilli"/><LineBreak/><Run Text=" flakes"/><LineBreak/><Run Text="soured cream or guacamole (optional)"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Nachos"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Tip tortilla chips on to a baking tray, pour over salsa and scatter over a few sliced spring onions."/><LineBreak/><Run Text="Grate over a good chunk of cheese (fontina is perfect, but cheddar will do). Add a pinch of crushed chilli flakes, then put under a hot grill for about 3 minutes to melt the cheese. Serve with soured cream or guacamole (optional)."/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

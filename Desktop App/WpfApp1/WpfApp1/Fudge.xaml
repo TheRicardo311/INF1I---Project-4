@@ -49,15 +49,14 @@
             </Grid>
             <!-- Text -->
             <Grid>
-
                 <Viewbox Margin="320 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"><Run Text="Ingredients"/><LineBreak/><Run Text="125g of butter"/><LineBreak/><Run Text="390g tin of condensed milk"/><LineBreak/><Run Text="2 tablespoons of golden syrup"/><LineBreak/><Run Text="220g of brown sugar"/><LineBreak/><Run Text="200g of white chocolate - broken into pieces"/></TextBlock>
+                    <TextBlock x:Name="Ingr" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"></TextBlock>
                 </Viewbox>
                 <Viewbox Margin="620 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White" Text="Fudge"/>
+                    <TextBlock x:Name="TitleHere" MaxWidth="200" Margin="5 0 5 0" TextWrapping="Wrap" Foreground="White"/>
                 </Viewbox>
                 <Viewbox Margin="920 0 0 0" HorizontalAlignment="Left" Width="300">
-                    <TextBlock MaxWidth="200" Margin="5 0 5 0" FontSize="10" TextWrapping="Wrap" Foreground="White"><Run Text="1."/><Run Text=" "/><Run Text="Break the white chocolate into pieces and chop. Set aside until needed."/><LineBreak/><Run Text="2. Line the base and sides of a 28cm x 18cm slice tin with baking paper and set aside until needed."/><LineBreak/><Run Text="3. Add the butter, golden syrup, condensed milk and brown sugar to a medium sized saucepan and cook over a low heat for approximately 10 minutes until the fudge mixture has started to thicken and the colour of the ingredients has turned a lovely golden brown."/><LineBreak/><Run Text="4. Remove the saucepan from the heat and add the chopped white chocolate and quickly stir to combine."/><LineBreak/><Run Text="5.Quickly pour the Caramel Fudge into your prepared tin and gently smooth the surface."/><LineBreak/><Run Text="6."/><Run Text=" "/><Run Text="Place the Caramel Fudge into the fridge for 6 hours (preferably overnight) to set before cutting into small pieces to enjoy."/><LineBreak/><Run/></TextBlock>
+                    <TextBlock x:Name="Desc" MaxWidth="200" Margin="5 0 5 0" FontSize="11" TextWrapping="Wrap" Foreground="White" Width="212"></TextBlock>
                 </Viewbox>
             </Grid>
         </StackPanel>

@@ -19,9 +19,19 @@ namespace WPFApp1
     /// </summary>
     public partial class ChickenSoup : Window
     {
+        DataBaseYo _db = new DataBaseYo();
         public ChickenSoup()
         {
             InitializeComponent();
+
+            string _recipe = Title;
+
+            string _ingr = _db.getText(_recipe, "ingredients");
+            string _desc = _db.getText(_recipe, "description");
+
+            TitleHere.Text = _recipe;
+            Ingr.Text = _ingr;
+            Desc.Text = _desc;
         }
         public void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
