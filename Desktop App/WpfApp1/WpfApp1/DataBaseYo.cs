@@ -257,16 +257,38 @@ namespace WPFApp1
                 output = mdr.GetString("user_name");
                 if (output == _userName)
                 {
+                    this.CloseConnection();
                     return true;
                 }
                 else
                 {
+                    this.CloseConnection();
                     return false;
                 }
             }
             this.CloseConnection();
-
             return false;
+        }
+
+        public string getText(string _recipe, string _text)
+        {
+            string output;
+
+            this.OpenConnection();
+
+            string sqlQuery = @"SELECT * FROM recipe WHERE recipe_name=" + "'" + _recipe + "'";
+            cmd = new MySqlCommand(sqlQuery, connection);
+
+            mdr = cmd.ExecuteReader();
+            while (mdr.Read())
+            {
+                output = mdr.GetString(_text);
+                this.CloseConnection();
+                return output;
+            }
+            this.CloseConnection();
+
+            return null;
         }
     }
 }

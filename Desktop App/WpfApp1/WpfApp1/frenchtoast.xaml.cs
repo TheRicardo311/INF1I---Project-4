@@ -19,9 +19,18 @@ namespace WPFApp1
     /// </summary>
     public partial class frenchtoast : Window
     {
+        DataBaseYo _db = new DataBaseYo();
         public frenchtoast()
         {
             InitializeComponent();
+            string _recipe = Title;
+
+            string _ingr = _db.getText(_recipe, "ingredients");
+            string _desc = _db.getText(_recipe, "description");
+
+            FT_title.Text = _recipe;
+            FT_ingr.Text = _ingr;
+            FT_desc.Text = _desc;
         }
         private void DHomeButton_Click(object sender, RoutedEventArgs e)
         {
